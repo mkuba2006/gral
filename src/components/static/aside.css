@@ -1,0 +1,143 @@
+button{
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.sidebar{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 73px;
+    height: 100%;
+    background: #29277a;
+    transition: width 0.4s;
+}
+.sidebar.open{
+    width: 260px;
+}
+.sidebar-inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 260px;
+}
+.sidebar-header{
+    display: flex;
+    align-items: center;
+    height: 72px;
+    background:  rgb(0 0 0 / 15%);
+}
+.sidebar-burger{
+    width: 63px;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(5px);
+    flex-direction: column;
+    animation: swap 2s ease;
+}
+.one, .two, .three{
+    display: block;
+    cursor: pointer;
+    width: 26px;
+    height: 3px;
+    margin: 2px;
+    border-radius: 8px;
+    background-color: white;
+    transition: all 0.2s ease;
+    z-index: 20;
+}
+.sidebar.open .one{
+    transform: rotate(-45deg) translate(-6px, 4px);
+}
+.sidebar.open .two{
+    opacity: 0;
+}
+.sidebar.open .three{
+    transform: rotate(45deg) translate(-6px, -4px);
+}
+
+
+
+.sidebar-logo{
+    height: 38px;
+    margin-left: 10px;
+}
+.sidebar-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 16px;
+}
+
+.sidebar-button{
+    display: flex;
+    gap: 16px;
+    justify-content: left;
+    height: auto;
+    min-height: 20%;
+    width: 100%;
+    font-size: 16px;
+    text-transform: capitalize;
+    line-height: 1;
+    padding: 0 10px;
+    border-radius: 8px;
+    color: #f9f9f9;
+    opacity: 0.7;
+}
+.sidebar-button > ul{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    font-size: 30px;
+    color: white;
+    margin-right: 25px;
+}
+.title{
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    opacity: 0.7;
+}
+.sidebar-button > ul > button{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    width: 100%;
+}
+.sidebar-li{
+    padding-bottom: 3px;
+    font-size: 15px;
+    padding-left: 5px;
+    display: flex;
+    justify-content: left;
+    list-style-type: none;
+    opacity: 0.7;
+}
+.sidebar-li:hover{
+    opacity: 1;
+}
+.sidebar-button:hover .title{
+    opacity: 1;
+}
+.sidebar-button p{
+    color: white;
+}
+.sidebar-logo, .sidebar-button p{
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.sidebar.open
+:is(.sidebar-button p, .sidebar-logo){
+    opacity: 1;
+}
