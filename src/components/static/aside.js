@@ -1,12 +1,10 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "./aside.css";
-
-import ReactDOM from 'react-dom'
+import List from "../logic/itemy";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMemory, faMicrochip, faHardDrive, faTachographDigital, faChalkboard} from '@fortawesome/free-solid-svg-icons'
 
 
-//<FontAwesomeIcon icon={faEnvelope} />
 
 const navItems = [
   {
@@ -68,10 +66,19 @@ const navItems = [
   }
 ];
 
+
+
 const Aside = () => {
+  const it = useContext(List);
+
+
   const [isOpen, setIsOpen] = useState(false);
   const [expandedGroup, setExpandedGroup] = useState(null);
 
+  const setIt = (i) =>{
+    it.name = i;
+    console.log(it.name);
+  }
   const toggleGroup = (index) => {
     if(isOpen){
     setExpandedGroup((prevGroup) => (prevGroup === index ? null : index));
@@ -79,7 +86,9 @@ const Aside = () => {
   };
 
   return (
-    <aside className={`sidebar ${isOpen ? "open" : ""}`}>
+    <div>
+     <div className={` ${isOpen ? "before" : ""}`}></div>
+`    <aside className={`sidebar ${isOpen ? "open" : ""}`}>
       <div className="sidebar-inner">
         <header className="sidebar-header">
           <button type="button" className="sidebar-burger" onClick={() => setIsOpen(!isOpen)}>
@@ -92,25 +101,26 @@ const Aside = () => {
 
         <nav className="sidebar-menu">
           {navItems.map((item, index) => (
-            <button className="sidebar-button">
-                <ul key={index}>
+            <div key={index} className="sidebar-button">
+                <ul>
                     <button onClick={() => toggleGroup(index)}>
                       <span className="title"><FontAwesomeIcon icon={item.img} className="icon" />{item.name}</span>
                       <p>
                       {expandedGroup === index &&
                           item.options.map((option, optionIndex) => (
-                          <li onClick={() => setIsOpen(!isOpen)} className="sidebar-li" key={optionIndex}>{option}</li>
+                          <li key={option} onClick={() => {setIsOpen(!isOpen); setIt(option)}} className="sidebar-li">{option}</li>
                       ))}
                       </p>
                     </button>
                 </ul>
-            </button>
+            </div>
           ))}
         </nav>
 
 
       </div>
-    </aside>
+    </aside>`
+    </div>
   );
 };
 

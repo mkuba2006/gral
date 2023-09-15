@@ -4,7 +4,17 @@ button{
     padding: 0;
     cursor: pointer;
 }
+.before{
+    z-index: 2;
+    top: -10vh;
+    position: absolute;
+    width: 100vw;
+    height: 110vh;
+    background-color: #000000b9;
+    transition: all 0.2s ease;
+}
 .sidebar{
+    z-index: 3;
     position: absolute;
     overflow: hidden;
     top: 0;
