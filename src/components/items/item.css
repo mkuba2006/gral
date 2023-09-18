@@ -1,0 +1,30 @@
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 8%;
+    margin: 0 auto;
+}
+
+
+.item{
+    display: flex;
+    flex-direction: column;
+}
+.img_cont {
+    width: 250px;
+    height: 170px;
+    background-color: black;
+}
+
+.img_cont img {
+    max-width: 100%;
+    max-height: 170px;
+    object-fit: scale-down;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
