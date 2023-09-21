@@ -5,6 +5,32 @@ const basic = { items: [], totalAmount: 0 };
 
 const reducer = (stan, obecny) =>{
 
+  let items = [...stan.items];
+
+  if(obecny.type === "add"){
+    const index = stan.items.findIndex((item)=> item.id === obecny.item.id);
+    const ilosc = stan.totalAmount + obecny.item.cena * obecny.item.amount;
+    const citem = stan.items[index];
+
+    if(citem){
+      const ile = citem.totalAmount + obecny.item.amount;
+      const updatedItem = {...citem, amount: ile,};
+      items[index] = updatedItem;
+    }else{
+      items = stan.items.concat(obecny.item);
+    }
+    console.clear();
+    console.log(items);
+    return{
+      items: items,
+      totalAmount: ilosc 
+    }
+  }
+
+  if(obecny.type === "remove"){
+
+  }
+
 }
 
 const Provider = (props) =>{

@@ -16,8 +16,13 @@ function Item(props) {
       cena: props.cena,
       img: props.img,
       producent: props.producent,
+      pamiec: props.pamiec,
+      pierwszu: props.jed,
+      drugi: props.dwa,
+      trzeci: props.trzy,
+      czwarty: props.cztery,
     });
-    console.log(props.id,props.model,Number(ilosc));
+    // console.log(props.id,props.model,Number(ilosc));
   }
 
   return (
@@ -25,11 +30,18 @@ function Item(props) {
       <div className="img_cont">
         <img src={props.img} alt={props.model} className="item-img" />
       </div>
-      <h2>{props.producent} {props.model}</h2>
-      <h3>{props.cena}</h3>
-      <Form onAdd={addtocart} />
+      <div id="opis">
+        <h2>{props.producent} {props.model} {props.pamiec}</h2>
+        <p>{props.jed} | {props.dwa}</p>
+        <div id="sum">
+          <h3>{props.cena}</h3>
+          <Form onAdd={addtocart} />
+        </div>
+      </div>
+      <div id="underline"></div>
     </li>
   );
 }
 
 export default Item;
+

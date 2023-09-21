@@ -1,17 +1,30 @@
-import "./item.css";
+import React, { useState } from 'react';
+import './item.css';
 
 function Form(props) {
-    const add = (e) =>{
-      e.preventDefault();
-      const val = 1;
-      props.onAdd(val);
-    }
+  const [isClicked, setIsClicked] = useState(false);
 
-    return (
-      <form onSubmit={add}>
-        <button type="submit">Add</button>
-      </form>
-    );
+  const handleButtonClick = () => {
+    setIsClicked(true);
+    setTimeout(() => {
+      setIsClicked(false);
+    }, 300); 
+
+    const val = 1;
+    props.onAdd(val);
+  }
+
+  return (
+    <form onSubmit={e => e.preventDefault()}>
+      <button
+        type="submit"
+        className={` ${isClicked ? 'button-clicked' : ''}`}
+        onClick={handleButtonClick}
+      >
+        BUY
+      </button>
+    </form>
+  );
 }
-  
+
 export default Form;

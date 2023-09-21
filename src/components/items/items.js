@@ -10,11 +10,11 @@ const itemy = [
        Rodzaj_pamięci: 'GDDR6X',
        cena: '2499 zł',
     
-       szczegółowe: {
-        Maksymalna_rozdzielczość: '7680x4320',
-        Przepustowość_pamięci: '760 GB/s',
-        taktowanie_układu: '1440 MHz',
-        taktowanie_układu_Turbo: '1710 MHz'
+       szczegol: {
+        jeden: '7680x4320',
+        dwa: '760 GB/s',
+        trzy: '1440 MHz',
+        cztery: '1710 MHz'
        }
     },
 
@@ -26,11 +26,11 @@ const itemy = [
        Pojemność_pamięci: '12 GB GDDR6',
        Rodzaj_pamięci: 'GDDR6',
        cena: '1899 zł',
-       szczegółowe: {
-        Maksymalna_rozdzielczość: '7680x4320',
-        Przepustowość_pamięci: '384 GB/s',
-        taktowanie_układu: '2321 MHz',
-        taktowanie_układu_Turbo: '2581 MHz'
+       szczegol: {
+        jeden: '7680x4320',
+        dwa: '384 GB/s',
+        trzy: '2321 MHz',
+        cztery: '2581 MHz'
        },
     },
     {
@@ -42,11 +42,11 @@ const itemy = [
        Rodzaj_pamięci: 'GDDR6X',
        cena: '3499 zł',
         
-       szczegółowe: {
-        Maksymalna_rozdzielczość: '7680x4320',
-        Przepustowość_pamięci: '936 GB/s',
-        taktowanie_układu: '1725 MHz',
-        taktowanie_układu_Turbo: '1860 MHz'
+       szczegol: {
+        jeden: '7680x4320',
+        dwa: '936 GB/s',
+        trzy: '1725 MHz',
+        cztery: '1860 MHz'
        }
     },
 
@@ -59,11 +59,11 @@ const itemy = [
        Rodzaj_pamięci: 'GDDR6',
        cena: '1099 zł',
         
-       szczegółowe: {
-        Maksymalna_rozdzielczość: '7680x4320',
-        Przepustowość_pamięci: '288 GB/s',
-        taktowanie_układu: '1500 MHz',
-        taktowanie_układu_Turbo: '1845 MHz'
+       szczegol: {
+        jeden: '7680x4320',
+        dwa: '288 GB/s',
+        trzy: '1500 MHz',
+        cztery: '1845 MHz'
        }
     },
 
@@ -76,11 +76,11 @@ const itemy = [
        Rodzaj_pamięci: 'GDDR5',
        cena: '699 zł',
         
-       szczegółowe: {
-        Maksymalna_rozdzielczość: '7680x4320',
-        Przepustowość_pamięci: '112 GB/s',
-        taktowanie_układu: '1341 MHz',
-        taktowanie_układu_Turbo: '1455 MHz'
+       szczegol: {
+        jeden: '7680x4320',
+        dwa: '112 GB/s',
+        trzy: '1341 MHz',
+        cztery: '1455 MHz'
        }
     },
 
@@ -93,16 +93,16 @@ const itemy = [
        Rodzaj_pamięci: 'GDDR6',
        cena: '1499 zł',
         
-       szczegółowe: {
-        Maksymalna_rozdzielczość: '7680x4320',
-        Przepustowość_pamięci: '360 GB/s',
-        taktowanie_układu: '1320 MHz',
-        taktowanie_układu_Turbo: '1777 MHz'
+       szczegol: {
+        jeden: '7680x4320',
+        dwa: '360 GB/s',
+        trzy: '1320 MHz',
+        cztery: '1777 MHz'
        }
     },
 
     {
-      id:7,
+       id:7,
        img: 'https://itreseller.com.pl/wp-content/uploads/2020/11/RX-6800-PULSE-1024x1013.png',
        producent: 'Sapphire',
        model: 'Radeon RX 6800',
@@ -110,16 +110,16 @@ const itemy = [
        Rodzaj_pamięci: 'GDDR6',
        cena: '2199 zł',
         
-       szczegółowe: {
-        Maksymalna_rozdzielczość: '7680x4320',
-        Przepustowość_pamięci: '512 GB/s',
-        taktowanie_układu: '1700 MHz',
-        taktowanie_układu_Turbo: '2105 MHz'
+       szczegol: {
+        jeden: '7680x4320',
+        dwa: '512 GB/s',
+        trzy: '1700 MHz',
+        cztery: '2105 MHz'
        }
     },
 
     {
-      id:8,
+       id:8,
        img: 'https://www.zotac.com/download/files/page/Choose_VGA/vga_zotacgaming_1660_super.png',
        producent: 'ZOTAC',
        model: 'GeForce GTX 1660',
@@ -127,16 +127,16 @@ const itemy = [
        Rodzaj_pamięci: 'GDDR5',
        cena: '999 zł',
         
-       szczegółowe: {
-        Maksymalna_rozdzielczość: '7680x4320',
-        Przepustowość_pamięci: '192 GB/s',
-        taktowanie_układu: '1530 MHz',
-        taktowanie_układu_Turbo: '1785 MHz'
+       szczegol: {
+        jeden: '7680x4320',
+        dwa: '192 GB/s',
+        trzy: '1530 MHz',
+        cztery: '1785 MHz'
        }
     },
 
     {
-      id:9,
+       id:9,
        img: 'https://image.ceneostatic.pl/data/article_picture/d9/66/2557-074d-4502-8947-0fe007ca1bff_large.png',
        producent: 'Palit',
        model: 'GeForce RTX 3070',
@@ -144,16 +144,16 @@ const itemy = [
        Rodzaj_pamięci: 'GDDR6',
        cena: '1799 zł',
         
-       szczegółowe: {
-        Maksymalna_rozdzielczość: '7680x4320',
-        Przepustowość_pamięci: '448 GB/s',
-        taktowanie_układu: '1500 MHz',
-        taktowanie_układu_Turbo: '1725 MHz'
+       szczegol: {
+        jeden: '7680x4320',
+        dwa: '448 GB/s',
+        trzy: '1500 MHz',
+        cztery: '1725 MHz'
        }
     },
 
     {
-      id:10,
+       id:10,
        img: 'https://asset.msi.com/resize/image/global/product/product_6_20191129112250_5de08f0a68258.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png',
        producent: 'XFX',
        model: 'Radeon RX 5500 XT',
@@ -161,11 +161,11 @@ const itemy = [
        Rodzaj_pamięci: 'GDDR6',
        cena: '899 zł',
     
-       szczegółowe: {
-        Maksymalna_rozdzielczość: '7680x4320',
-        Przepustowość_pamięci: '448 GB/s',
-        taktowanie_układu: '1500 MHz',
-        taktowanie_układu_Turbo: '1725 MHz'
+       szczegol: {
+        jeden: '7680x4320',
+        dwa: '448 GB/s',
+        trzy: '1500 MHz',
+        cztery: '1725 MHz'
        }
     }
 ]
@@ -173,7 +173,6 @@ const itemy = [
 
 
 function Items() {
-
     return (
       <ul>
         {itemy.map((ite)=>(
@@ -184,7 +183,12 @@ function Items() {
                 amount={ite.amount}
                 cena={ite.cena}
                 img={ite.img}
+                pamiec={ite.Pojemność_pamięci}
                 producent={ite.producent}
+                jed={ite.szczegol.jeden}
+                dwa={ite.szczegol.dwa}
+                trzy={ite.szczegol.trzy}
+                cztery={ite.szczegol.cztery}
             />
         ))}
       </ul>
