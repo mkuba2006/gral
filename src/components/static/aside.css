@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 button{
     background: transparent;
     border: 0;
     padding: 0;
     cursor: pointer;
 }
+.cart{
+    font-size: 25px;
+}
 .before{
     z-index: 2;
     top: -10vh;
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 110vh;
     background-color: #000000b9;
@@ -15,13 +19,13 @@ button{
 }
 .sidebar{
     z-index: 3;
-    position: absolute;
+    position: fixed;
     overflow: hidden;
     top: 0;
     left: 0;
     width: 73px;
     height: 100%;
-    background: #29277a;
+    background: #272829;
     transition: width 0.4s;
 }
 .sidebar.open{
@@ -80,6 +84,7 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-top: 20px;
     padding: 10px;
     gap: 16px;
 }
@@ -132,6 +137,7 @@ button{
     justify-content: left;
     list-style-type: none;
     opacity: 0.7;
+    font-family: 'Montserrat', sans-serif;
 }
 .sidebar-li:hover{
     opacity: 1;

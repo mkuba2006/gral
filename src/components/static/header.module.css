@@ -1,5 +1,7 @@
 .header{
-    width: 100vw;
+    width: 80vw;
     display: flex;
-    padding: 8px 10%;
+    margin: 20px 10%;
+    align-items: center;
+    justify-content: space-between;
 }

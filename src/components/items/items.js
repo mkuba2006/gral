@@ -2,6 +2,7 @@ import Item from "./item";
 import "./item.css";
 const itemy = [
     {
+       id:1,
        img: 'https://bizserver.eu/5956-thickbox_default/palit-karta-graficzna-geforce-rtx-3080-gamingpro-10gb-gddr6x-320bit-hdmi3dp.jpg',
        producent: 'NVIDIA',
        model: 'GeForce RTX 3080',
@@ -18,6 +19,7 @@ const itemy = [
     },
 
     {
+       id:2,
        img: 'https://static.gigabyte.com/StaticFile/Image/Global/0a0848c3f652206dc7f2c5c30c6cdf51/Product/28078/Png',
        producent: 'AMD',
        model: 'Radeon RX 6700 XT',
@@ -32,6 +34,7 @@ const itemy = [
        },
     },
     {
+       id:3,
        img: 'https://hanzo.com.pl/userdata/public/gfx/68874/Karta-graficzna-Asus-ROG-Strix-GeForce-RTX-3090-White-OC-Edition-24GB-GDDR6X.jpg',
        producent: 'ASUS',
        model: 'ROG Strix GeForce RTX 3090',
@@ -48,6 +51,7 @@ const itemy = [
     },
 
     {
+       id:4,
        img: 'https://www.pcbuildersclub.com/wp-content/uploads/2019/02/Gigabyte-GeForce-GTX-1660-Ti-Mini-ITX-OC-1.png',
        producent: 'EVGA',
        model: 'GeForce GTX 1660 Ti',
@@ -64,6 +68,7 @@ const itemy = [
     },
 
     {
+       id:5,
        img: 'https://media.cdn.videotesty.pl/media/products/gigabyte-geforce-gtx-1050-ti-windforce-4gb-gddr5-128-bit-3xhdmi-dvi-d-dp-box-gv-n105twf2oc-4gd/7000225f48dc11b9910b9e4daf415460.png',
        producent: 'MSI',
        model: 'GeForce GTX 1050 Ti',
@@ -80,6 +85,7 @@ const itemy = [
     },
 
     {
+       id:6,
        img: 'https://asset.msi.com/resize/image/global/product/product_9_20180411114234_5acd842a97197.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png',
        producent: 'Gigabyte',
        model: 'GeForce RTX 3060',
@@ -96,6 +102,7 @@ const itemy = [
     },
 
     {
+      id:7,
        img: 'https://itreseller.com.pl/wp-content/uploads/2020/11/RX-6800-PULSE-1024x1013.png',
        producent: 'Sapphire',
        model: 'Radeon RX 6800',
@@ -112,6 +119,7 @@ const itemy = [
     },
 
     {
+      id:8,
        img: 'https://www.zotac.com/download/files/page/Choose_VGA/vga_zotacgaming_1660_super.png',
        producent: 'ZOTAC',
        model: 'GeForce GTX 1660',
@@ -128,6 +136,7 @@ const itemy = [
     },
 
     {
+      id:9,
        img: 'https://image.ceneostatic.pl/data/article_picture/d9/66/2557-074d-4502-8947-0fe007ca1bff_large.png',
        producent: 'Palit',
        model: 'GeForce RTX 3070',
@@ -144,6 +153,7 @@ const itemy = [
     },
 
     {
+      id:10,
        img: 'https://asset.msi.com/resize/image/global/product/product_6_20191129112250_5de08f0a68258.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png',
        producent: 'XFX',
        model: 'Radeon RX 5500 XT',

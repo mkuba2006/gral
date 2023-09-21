@@ -1,4 +1,4 @@
-
+import "./item.css";
 
 function Form(props) {
     const add = (e) =>{
