@@ -1,5 +1,3 @@
-import { useContext, useEffect, useState } from "react";
-import CartContext from '../logic/cart_context'
 import './cart.css'
 function Cart(props) {
 
@@ -12,5 +10,3 @@ function Cart(props) {
   }
   
   export default Cart;
-  
-  

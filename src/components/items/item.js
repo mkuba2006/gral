@@ -7,8 +7,9 @@ import { useContext } from "react";
 function Item(props) {
   const ctx = useContext(CartContext);
 
-  const addtocart = ilosc => {
-    ctx.addItem({
+  const addtocart = (ilosc) => {
+
+    ctx.addIstem({
       id: props.id,
       model: props.model,
       amount: Number(ilosc),
@@ -21,6 +22,7 @@ function Item(props) {
       trzeci: props.trzy,
       czwarty: props.cztery,
     });
+    // console.log(props.id,props.model,Number(ilosc));
   }
 
   return (
@@ -30,7 +32,7 @@ function Item(props) {
       </div>
       <div id="opis">
         <h2>{props.producent} {props.model} {props.pamiec}</h2>
-        <p>{props.jed} | {props.dwa} | {props.trzy}</p>
+        <p>{props.jed} | {props.dwa}</p>
         <div id="sum">
           <h3>{props.cena}</h3>
           <Form onAdd={addtocart} />

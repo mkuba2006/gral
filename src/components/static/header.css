@@ -5,7 +5,6 @@
     align-items: center;
     justify-content: space-around;
     font-family: 'Montserrat', sans-serif;
-    background-color: aqua;
 }
 img {
     background: none;
@@ -39,4 +38,10 @@ img {
     height: 30px;
     border-radius: 50%;
     font-weight: 800;
+}
+
+#list{
+    color: #9400FF;
+    display: flex;
+    flex-direction: row;
 }
