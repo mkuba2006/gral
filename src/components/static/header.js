@@ -1,10 +1,13 @@
-import classes from './header.module.css'
+import './header.css'
 import Cart from './cart';
 import { useContext, useEffect, useState } from "react";
 import CartContext from '../logic/cart_context'
-
+import OpenContext from '../logic/open_context';
 function Header() {
-
+  const Otx = useContext(OpenContext);
+  const change = () =>{
+    Otx.setOpen()
+  }
   const ctx = useContext(CartContext);
   const {items} = ctx; 
   useEffect(()=>{},[items])
@@ -14,10 +17,12 @@ function Header() {
   },0)
 
     return (
-      <div className={classes.header}>
+      <div class="header">
         <img src='https://www.gral.pl/images/logo-h2.gif'/>
-        <Cart/>
-        {length}
+        <button id='button' onClick={change}>
+          <Cart/> Cart
+          <span>{length}</span>
+        </button>
       </div>
     );
   }

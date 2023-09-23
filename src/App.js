@@ -25,7 +25,7 @@ function App() {
         <Cart/>
         <Header/>
         <List.Provider value={Listvalue}>
-          <Aside/>
+          {/* <Aside/> */}
         </List.Provider>
         <Items />
       </OpenProvider>
