@@ -8,15 +8,6 @@ button{
 .cart{
     font-size: 25px;
 }
-.before{
-    z-index: 2;
-    top: -10vh;
-    position: fixed;
-    width: 100vw;
-    height: 110vh;
-    background-color: #000000b9;
-    transition: all 0.2s ease;
-}
 .sidebar{
     z-index: 3;
     position: fixed;
@@ -25,7 +16,7 @@ button{
     left: 0;
     width: 73px;
     height: 100%;
-    background: #272829;
+    background: #191717;
     transition: width 0.4s;
 }
 .sidebar.open{
@@ -85,8 +76,7 @@ button{
     flex-direction: column;
     justify-content: space-around;
     margin-top: 20px;
-    padding: 10px;
-    gap: 16px;
+    gap: 20px;
 }
 
 .sidebar-button{
@@ -99,7 +89,6 @@ button{
     font-size: 16px;
     text-transform: capitalize;
     line-height: 1;
-    padding: 0 10px;
     border-radius: 8px;
     color: #f9f9f9;
     opacity: 0.7;
@@ -110,6 +99,9 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+svg{
+    width: 73px;
 }
 .icon{
     font-size: 30px;
@@ -122,6 +114,7 @@ button{
     display: flex;
     align-items: center;
     opacity: 0.7;
+    margin-bottom: 10px;
 }
 .sidebar-button > ul > button{
     display: flex;
@@ -132,7 +125,7 @@ button{
 .sidebar-li{
     padding-bottom: 3px;
     font-size: 15px;
-    padding-left: 5px;
+    padding-left: 30px;
     display: flex;
     justify-content: left;
     list-style-type: none;
