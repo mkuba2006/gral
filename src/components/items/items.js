@@ -174,7 +174,7 @@ const itemy = [
 
 function Items() {
     return (
-      <ul>
+      <ul className={classes.ul}>
         {itemy.map((ite)=>(
             <Item
                 key={ite.model}

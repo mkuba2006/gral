@@ -18,7 +18,7 @@ function Form(props) {
     <form onSubmit={e => e.preventDefault()}>
       <button
         type="submit"
-        className={` ${isClicked ? 'button-clicked' : ''}`}
+        className={` ${isClicked ? `${classes.button_clicked}` : ''}`}
         onClick={handleButtonClick}
       >
         BUY

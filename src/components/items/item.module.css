@@ -4,7 +4,7 @@
 
 
 
-ul{
+.ul{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -12,7 +12,7 @@ ul{
     justify-content: center;
     gap: 40px;
     padding: 0 8%;
-    margin: 0 auto;
+    margin: 80px auto;
     font-family: 'Montserrat', sans-serif;
     padding-bottom: 300px;
 }
@@ -27,7 +27,7 @@ ul{
     color: #0F6292;
     border-radius: 8px;
     padding: 10px;
-    transition: 0.4s;
+    transition: 0.2s;
     height: 310px;
 }
 .item:hover{
@@ -89,7 +89,7 @@ p{
     font-weight: 100;
     font-size: 13px;
 }
-#sum{
+.sum{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -112,7 +112,7 @@ form button {
     border: 1px solid white; 
     border-radius: 8px; 
     font-weight: 600;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
     font-family: 'Montserrat', sans-serif; 
     color: white;
     background-color: #9400FF;
@@ -121,6 +121,6 @@ form button {
 form button:hover {
     scale: 1.1;
 }
-.button-clicked {
-    transform: scale(1.1);
+.button_clicked {
+    transform: scale(0.9);
 }

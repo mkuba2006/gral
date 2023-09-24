@@ -1,4 +1,4 @@
-import Header from "./components/static/header";
+import Header from "./components/static/header/header";
 import Aside from "./components/static/aside/aside";
 import List from "./components/logic/itemy";
 import { Fragment,useState, createContext } from "react";
@@ -7,8 +7,7 @@ import Provider from "./components/logic/car_provider";
 import Cart from "./components/cart/cart";
 import Fog from "./components/static/fog";
 import OpenProvider from "./components/logic/open_provider";
-
-
+import XHeader from "./components/static/header copy/header";
 
 function App() {
 
@@ -23,6 +22,7 @@ function App() {
       <OpenProvider>
         <Fog />
         <Cart/>
+        {/* <XHeader/> */}
         <Header/>
         <List.Provider value={Listvalue}>
           <Aside/>

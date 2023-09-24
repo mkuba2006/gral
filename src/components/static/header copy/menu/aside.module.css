@@ -5,28 +5,14 @@ button{
     padding: 0;
     cursor: pointer;
 }
-.cart{
-    font-size: 25px;
-}
-.sidebar{
-    z-index: 3;
-    position: fixed;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    width: 83px;
-    height: 100%;
-    background: #191717;
-    transition: width 0.4s;
-}
+
 .sidebar.open{
     width: 260px;
 }
 .sidebar_inner{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 260px;
+    margin: 0 100px;
+    display: flex;
+    flex-direction: row;
 }
 .sidebar_header{
     display: flex;
@@ -34,43 +20,7 @@ button{
     height: 72px;
     background:  rgb(0 0 0 / 15%);
 }
-.sidebar_burger{
-    width: 73px;
-    height: 72px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translateX(5px);
-    flex-direction: column;
-    animation: swap 2s ease;
-}
-.one, .two, .three{
-    display: block;
-    cursor: pointer;
-    width: 26px;
-    height: 3px;
-    margin: 2px;
-    border-radius: 8px;
-    background-color: white;
-    transition: all 0.2s ease;
-    z-index: 20;
-}
-.sidebar.open .one{
-    transform: rotate(-45deg) translate(-6px, 4px);
-}
-.sidebar.open .two{
-    opacity: 0;
-}
-.sidebar.open .three{
-    transform: rotate(45deg) translate(-6px, -4px);
-}
 
-
-
-.sidebar_logo{
-    height: 38px;
-    margin-left: 10px;
-}
 .sidebar_menu{
     display: flex;
     flex-direction: column;
@@ -90,10 +40,9 @@ button{
     text-transform: capitalize;
     line-height: 1;
     border-radius: 8px;
-    color: #f9f9f9;
+    color: black;
     opacity: 0.7;
     transition: 0.3s;
-    margin-left: 10px;
 }
 .sidebar_button > ul{
     width: 100%;
@@ -112,21 +61,29 @@ button{
 
 
 
-
-svg{
-    width: 73px;
+.but{
+    margin: 0 5px;
 }
 .icon{
-    font-size: 30px;
-    color: white;
-    margin-right: 25px;
+    font-size: 15px;
+    width: 30px;
+    color: black;
 }
 .title{
-    font-size: 18px;
-    color: white;
+    font-size: 15px;
+    color: black;
     display: flex;
     align-items: center;
     opacity: 0.7;
+}
+.image{
+    width: 30px;
+    display: flex;
+    justify-content: right;
+}
+.Itname{
+    display: flex;
+    font-size: 15px
 }
 .sidebar_button > ul > button{
     display: flex;
@@ -135,17 +92,12 @@ svg{
     width: 100%;
 }
 .sidebar_li{
-    padding-bottom: 3px;
     font-size: 15px;
-    padding-left: 30px;
     display: flex;
     justify-content: left;
     list-style-type: none;
     opacity: 0.7;
     font-family: 'Montserrat', sans-serif;
-}
-.sidebar_li:first-of-type{
-    margin-top: 10px;
 }
 .sidebar_li:hover{
     opacity: 1;

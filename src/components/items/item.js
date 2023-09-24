@@ -32,8 +32,8 @@ function Item(props) {
       </div>
       <div id="opis">
         <h2>{props.producent} {props.model} {props.pamiec}</h2>
-        <p>{props.jed} | {props.dwa}</p>
-        <div id="sum">
+        <p>{props.jed} | {props.dwa} | {props.trzy}</p>
+        <div className={classes.sum}>
           <h3>{props.cena}</h3>
           <Form onAdd={addtocart} />
         </div>
