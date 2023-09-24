@@ -19,7 +19,7 @@ function XHeader() {
 
     return (
       <div className="header2">
-        <img src='https://www.gral.pl/images/logo-h2.gif' className='img2'/>
+        <img src='https://github.com/mkuba2006/gral/blob/master/src/Gral.pl.png?raw=true' className='img2'/>
           <XAside />
         <button className='button' onClick={change}>
           <Cart/>
