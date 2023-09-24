@@ -1,0 +1,9 @@
+
+.fog{
+    z-index: 2;
+    top: -10vh;
+    position: fixed;
+    width: 100vw;
+    min-height: 110vh;
+    background-color: #000000b9;
+}

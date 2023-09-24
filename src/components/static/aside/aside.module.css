@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 button{
     background: transparent;
     border: 0;
@@ -22,19 +22,19 @@ button{
 .sidebar.open{
     width: 260px;
 }
-.sidebar-inner{
+.sidebar_inner{
     position: absolute;
     top: 0;
     left: 0;
     width: 260px;
 }
-.sidebar-header{
+.sidebar_header{
     display: flex;
     align-items: center;
     height: 72px;
     background:  rgb(0 0 0 / 15%);
 }
-.sidebar-burger{
+.sidebar_burger{
     width: 63px;
     height: 72px;
     display: flex;
@@ -67,11 +67,11 @@ button{
 
 
 
-.sidebar-logo{
+.sidebar_logo{
     height: 38px;
     margin-left: 10px;
 }
-.sidebar-menu{
+.sidebar_menu{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -79,7 +79,7 @@ button{
     gap: 20px;
 }
 
-.sidebar-button{
+.sidebar_button{
     display: flex;
     gap: 16px;
     justify-content: left;
@@ -93,7 +93,7 @@ button{
     color: #f9f9f9;
     opacity: 0.7;
 }
-.sidebar-button > ul{
+.sidebar_button > ul{
     width: 100%;
     padding: 0;
     display: flex;
@@ -116,13 +116,13 @@ svg{
     opacity: 0.7;
     margin-bottom: 10px;
 }
-.sidebar-button > ul > button{
+.sidebar_button > ul > button{
     display: flex;
     justify-content: left;
     flex-direction: column;
     width: 100%;
 }
-.sidebar-li{
+.sidebar_li{
     padding-bottom: 3px;
     font-size: 15px;
     padding-left: 30px;
@@ -132,21 +132,21 @@ svg{
     opacity: 0.7;
     font-family: 'Montserrat', sans-serif;
 }
-.sidebar-li:hover{
+.sidebar_li:hover{
     opacity: 1;
 }
-.sidebar-button:hover .title{
+.sidebar_button:hover .title{
     opacity: 1;
 }
-.sidebar-button p{
+.sidebar_button p{
     color: white;
 }
-.sidebar-logo, .sidebar-button p{
+.sidebar_logo, .sidebar_button p{
     opacity: 0;
     transition: 0.3s;
 }
 
 .sidebar.open
-:is(.sidebar-button p, .sidebar-logo){
+:is(.sidebar_button p, .sidebar_logo){
     opacity: 1;
-} */
+} 

@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import "./aside.css";
+import classes from "./aside.module.css";
 import List from "../../logic/itemy";
 
 
@@ -7,13 +7,13 @@ import List from "../../logic/itemy";
 
 const Head = (props) => {
   return (
-    <header className="sidebar-header" onClick={props.onClick}>
-        <button type="button" className="sidebar-burger">
-            <div className="one"></div>
-            <div className="two"></div>
-            <div className="three"></div>
+    <header className={classes.sidebar_header} onClick={props.onClick}>
+        <button type="button" className={classes.sidebar_burger}>
+            <div className={classes.one}></div>
+            <div className={classes.two}></div>
+            <div className={classes.three}></div>
         </button>
-        <img src="https://www.gral.pl/images/logo-h2.gif" className="sidebar-logo" alt="Logo" />
+        <img src="https://www.gral.pl/images/logo-h2.gif" className={classes.sidebar_logo} alt="Logo" />
     </header>
   );
 };
