@@ -11,7 +11,6 @@ const reducer = (stan, obecny) =>{
     const index = stan.items.findIndex((item)=> item.id === obecny.item.id);
     const ilosc = stan.totalAmount + obecny.item.cena * obecny.item.amount;
     const citem = stan.items[index];
-
     if(citem){
       const am = citem.amount + obecny.item.amount;
       const updatedItem = {...citem, amount: am,};
@@ -21,8 +20,9 @@ const reducer = (stan, obecny) =>{
     }
     console.clear();
     console.log(items);
-    console.log(items.length);
-
+    console.log(stan.totalAmount);
+    console.log(obecny.item.cena);
+    console.log(obecny.item.amount);
     return{
       items: items,
       totalAmount: ilosc 

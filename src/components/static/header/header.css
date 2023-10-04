@@ -46,3 +46,60 @@ img {
     display: flex;
     flex-direction: row;
 }
+
+#mainl{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    min-height: 300px;
+    max-height: 500px;
+    height: auto;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+#elements{
+    min-height: 200px;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    border-top: 0.1px solid rgb(199, 187, 187);
+}
+
+#Cart_title{
+    padding: 20px 20px 0 20px ;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+#under{
+    background-color: #ececec;
+    border-radius: 12px;
+    padding: 0 12px 12px 12px;
+}
+
+#sum{
+    font-size: 18px;
+    padding: 5px 5px 0 5px;
+    margin-top: 15px;
+    font-weight: 900;
+}
+#see_button{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 15px auto 0 auto;
+    padding: 6px 40px;
+    background-color: #9400FF;
+    color: white;
+    font-size: 17px; 
+    border-radius: 50px;
+    transition: .3s;
+}
+#see_button:hover{
+    background-color: #8003da;
+}

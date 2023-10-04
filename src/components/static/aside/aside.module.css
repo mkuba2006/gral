@@ -14,7 +14,7 @@ button{
     overflow: hidden;
     top: 0;
     left: 0;
-    width: 83px;
+    width: 93px;
     height: 100%;
     background: #191717;
     transition: width 0.4s;
@@ -40,7 +40,7 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateX(5px);
+    transform: translateX(10px);
     flex-direction: column;
     animation: swap 2s ease;
 }

@@ -8,7 +8,7 @@ const itemy = [
        model: 'GeForce RTX 3080',
        Pojemność_pamięci: '10 GB GDDR6X',
        Rodzaj_pamięci: 'GDDR6X',
-       cena: '2499 zł',
+       cena: '2499',
     
        szczegol: {
         jeden: '7680x4320',
@@ -25,7 +25,7 @@ const itemy = [
        model: 'Radeon RX 6700 XT',
        Pojemność_pamięci: '12 GB GDDR6',
        Rodzaj_pamięci: 'GDDR6',
-       cena: '1899 zł',
+       cena: '1899',
        szczegol: {
         jeden: '7680x4320',
         dwa: '384 GB/s',
@@ -40,7 +40,7 @@ const itemy = [
        model: 'ROG Strix GeForce RTX 3090',
        Pojemność_pamięci: '24 GB GDDR6X',
        Rodzaj_pamięci: 'GDDR6X',
-       cena: '3499 zł',
+       cena: '3499',
         
        szczegol: {
         jeden: '7680x4320',
@@ -57,7 +57,7 @@ const itemy = [
        model: 'GeForce GTX 1660 Ti',
        Pojemność_pamięci: '6 GB GDDR6',
        Rodzaj_pamięci: 'GDDR6',
-       cena: '1099 zł',
+       cena: '1099',
         
        szczegol: {
         jeden: '7680x4320',
@@ -74,7 +74,7 @@ const itemy = [
        model: 'GeForce GTX 1050 Ti',
        Pojemność_pamięci: '4 GB GDDR5',
        Rodzaj_pamięci: 'GDDR5',
-       cena: '699 zł',
+       cena: '699',
         
        szczegol: {
         jeden: '7680x4320',
@@ -91,7 +91,7 @@ const itemy = [
        model: 'GeForce RTX 3060',
        Pojemność_pamięci: '12 GB GDDR6',
        Rodzaj_pamięci: 'GDDR6',
-       cena: '1499 zł',
+       cena: '1499',
         
        szczegol: {
         jeden: '7680x4320',
@@ -108,7 +108,7 @@ const itemy = [
        model: 'Radeon RX 6800',
        Pojemność_pamięci: '16 GB GDDR6',
        Rodzaj_pamięci: 'GDDR6',
-       cena: '2199 zł',
+       cena: '2199',
         
        szczegol: {
         jeden: '7680x4320',
@@ -125,7 +125,7 @@ const itemy = [
        model: 'GeForce GTX 1660',
        Pojemność_pamięci: '6 GB GDDR5',
        Rodzaj_pamięci: 'GDDR5',
-       cena: '999 zł',
+       cena: '999',
         
        szczegol: {
         jeden: '7680x4320',
@@ -142,7 +142,7 @@ const itemy = [
        model: 'GeForce RTX 3070',
        Pojemność_pamięci: '8 GB GDDR6',
        Rodzaj_pamięci: 'GDDR6',
-       cena: '1799 zł',
+       cena: '1799',
         
        szczegol: {
         jeden: '7680x4320',
@@ -159,7 +159,7 @@ const itemy = [
        model: 'Radeon RX 5500 XT',
        Pojemność_pamięci: '8 GB GDDR6',
        Rodzaj_pamięci: 'GDDR6',
-       cena: '899 zł',
+       cena: '899',
     
        szczegol: {
         jeden: '7680x4320',

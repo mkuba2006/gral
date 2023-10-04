@@ -22,7 +22,7 @@ function App() {
       <OpenProvider>
         <Fog />
         <Cart/>
-        <XHeader/>
+        {/* <XHeader/> */}
         <Header/>
         <List.Provider value={Listvalue}>
           <Aside/>

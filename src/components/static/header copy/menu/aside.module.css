@@ -10,7 +10,7 @@ button{
     width: 260px;
 }
 .sidebar_inner{
-    margin: 0 100px;
+    margin: 0 70px;
     display: flex;
     flex-direction: row;
 }

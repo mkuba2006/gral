@@ -34,7 +34,7 @@ function Item(props) {
         <h2>{props.producent} {props.model} {props.pamiec}</h2>
         <p>{props.jed} | {props.dwa} | {props.trzy}</p>
         <div className={classes.sum}>
-          <h3>{props.cena}</h3>
+          <h3>{props.cena} zł</h3>
           <Form onAdd={addtocart} />
         </div>
       </div>
