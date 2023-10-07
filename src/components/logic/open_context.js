@@ -5,6 +5,8 @@ const OpenContext = React.createContext({
   setOpen: () => {},
   hover: false,
   setHover: () => {},
+  seeCart: false,
+  setCart: () => {},
 });
 
 export default OpenContext;

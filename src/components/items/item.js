@@ -16,7 +16,8 @@ function Item(props) {
       cena: props.cena,
       img: props.img,
       producent: props.producent,
-      pamiec: props.pamiec,
+      info1: props.info1,
+      info2: props.info2,
       pierwszu: props.jed,
       drugi: props.dwa,
       trzeci: props.trzy,
@@ -31,7 +32,7 @@ function Item(props) {
         <img src={props.img} alt={props.model} className={classes.item_img}/>
       </div>
       <div id="opis">
-        <h2>{props.producent} {props.model} {props.pamiec}</h2>
+        <h2>{props.producent} {props.model} {props.info1}</h2>
         <p>{props.jed} | {props.dwa} | {props.trzy}</p>
         <div className={classes.sum}>
           <h3>{props.cena} zł</h3>

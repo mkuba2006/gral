@@ -11,7 +11,8 @@ import Element from './element';
 function Header() {
   const Otx = useContext(OpenContext);
   const change = () =>{Otx.setOpen()};
-  const changeH = () =>{Otx.setHover(); console.log(Otx.hover);};
+  const changeH = () =>{Otx.setHover()};
+  const changeC = () =>{Otx.setCart(); console.log('cart: ',Otx.seeCart);};
 
   const ctx = useContext(CartContext);
   const {items} = ctx; 
@@ -26,7 +27,7 @@ function Header() {
       <div className="header">
         <img src='https://www.gral.pl/images/logo-h2.gif'/>
         <div>
-          <button id='button' onClick={change} onMouseEnter={changeH} onMouseLeave={changeH}>
+          <button id='button' onMouseEnter={changeH} onMouseLeave={changeH}>
             <Cart/> Cart
             <span>{length}</span>
           </button>
@@ -48,7 +49,7 @@ function Header() {
                 <div id='sum'>
                   Total price: {ctx.totalAmount} zł
                 </div>
-                <button id='see_button'>SEE CART</button>
+                <button id='see_button' onClick={changeC}>SEE CART</button>
               </div>
             </div>
           }

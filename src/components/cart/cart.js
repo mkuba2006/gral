@@ -2,33 +2,43 @@
 import { useContext } from 'react';
 import CartContext from '../logic//cart_context';
 import OpenContext from '../logic/open_context';
-
+import Element from './element';
 
 
 import './cart.css'
-// import Element from './element';
 
-function Cart() {
+function Cart_main() {
 
     const ctx = useContext(CartContext);
     const otx = useContext(OpenContext);
 
 
     return (
-        <div id="before">
-            {otx.open &&
+        <>
+            {otx.seeCart &&
                 <div id="main">
-                    {/* {ctx.items.map((item)=>(
-                        <Element
-                        img={item.img}
-                        amount = {item.totalAmount}
-                        price={item.price}
-                        />
-                    ))} */}
+                    <ul id="cart_ul">
+                        {ctx.items.map((item)=>(
+                            <Element
+                                img={item.img}
+                                amount = {item.amount}
+                                price={item.cena}
+                                producent ={item.producent}
+                                model ={item.model}
+                                main1={item.info1}
+                                main2={item.info2}
+                                jeden ={item.pierwszu}
+                                dwa ={item.drugi}
+                                trzy ={item.trzeci}
+                                cztery ={item.czwarty}
+                            />
+                        ))}
+                    </ul>
+                    #
                 </div>
             }
-        </div>
+        </>
     );
   }
   
-  export default Cart;
+  export default Cart_main;

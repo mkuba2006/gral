@@ -3,7 +3,7 @@ import './element.css'
 function Element(props) {
 
     return (
-        <div id="element">
+        <div id="elementt">
             <div id="img_container">
                 <img src={props.img}/>
             </div>

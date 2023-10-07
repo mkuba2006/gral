@@ -1,5 +1,5 @@
 import './cart.css'
-
+import './element.css'
 
 function Element(props) {
 
@@ -8,9 +8,16 @@ function Element(props) {
             <div id="img_container">
                 <img src={props.img}/>
             </div>
-            <div id="main">
+            <div id="info">
+                <h2>
+                  <span id='sp1'>Nazwa: {props.producent} {props.model}<br></br></span>
+                  <span id='sp2'>{props.main1}/{props.main2}<br></br></span>
+                  <span id='sp3'>{props.jeden}|{props.dwa}|{props.trzy}|{props.cztery}</span>
+                </h2>
+            </div>
+            <div id="element_main">
                 <span>{props.amount} szt</span>
-                <span>{props.price}</span>
+                <span>{props.price},00zł</span>
             </div>
         </div>
     );

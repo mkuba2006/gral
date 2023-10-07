@@ -21,12 +21,20 @@ const OpenProvider = (props) => {
     changeH({ type: 'HOVER' });
   };
 
+  const [isCart, changeC] = useReducer(reducer, first);
+  const toggleCart = () => {
+    changeC({ type: 'CART' });
+  };
+
+
 
   const OpenCTX = {
     open: isOpen,
     setOpen: toggleOpen,
     hover: isHover,
     setHover: toggleHover,
+    seeCart: isCart,
+    setCart: toggleCart,
   };
 
   return (

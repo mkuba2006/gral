@@ -1,4 +1,4 @@
-#element{
+#elementt{
     width: auto;
     height: 100px;
     display: flex;
@@ -9,31 +9,31 @@
 }
 
 
-#element #img_container{
+#elementt #img_container{
     height: 80px;
     width: 80px;
     padding: 10px;
     object-fit: cover;
 }
 
-#element #img_container img{
+#elementt #img_container img{
     height: 80px;
     width: 80px;
 }
 
-#element #element_main{
+#elementt #element_main{
     padding: 0 2px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-#element #element_main #FST{
+#elementt #element_main #FST{
     margin-bottom: 5px;
 }
-#element #element_main #FST h3{
+#elementt #element_main #FST h3{
     height: auto;
 }
-#element #element_main #SEC{
+#elementt #element_main #SEC{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
