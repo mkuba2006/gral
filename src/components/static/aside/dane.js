@@ -11,18 +11,12 @@ const NavItems = [
       img: faMicrochip,
       options: [
         "Socket AM1 / FM1 / FM2",
-        "Socket LGA1151",
-        "Socket LGA1151",
+        "Socket 1151",
         "Socket AM4",
-        "Socket AM4",
-        "Socket LGA2066",
-        "Socket LGA2066",
-        "Socket LGA1200",
-        "Socket LGA1200",
-        "Socket LGA1700",
-        "Socket LGA1700",
+        "Socket 2066",
+        "Socket 1200",
+        "Socket 1700",
         "Socket AM5",
-        "Socket AM5"
       ]
     },
     {

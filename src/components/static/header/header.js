@@ -46,7 +46,7 @@ function Header() {
                 ))}    
               </div>
               <div id='under'>
-                <div id='sum'>
+                <div id='sumH'>
                   Total price: {ctx.totalAmount} zł
                 </div>
                 <button id='see_button' onClick={changeC}>SEE CART</button>

@@ -171,7 +171,23 @@ const itemy = [
         trzy: '1500 MHz',
         cztery: '1725 MHz'
        }
-    }
+    },
+    {
+      id:11,
+      img: 'https://bcavn.com/Image/Picture/Intel/Processor/core-i9-x-series.jpg',
+      producent: 'Intel',
+      model: 'Core i9-10940X',
+      info1: '',
+      info2: '',
+      cena: '4499',
+   
+      szczegol: {
+       jeden: '3.3 GHz (4.6 GHz w trybie turbo)',
+       dwa: '14 rdzeni',
+       trzy: 'Socket 2066',
+       cztery: 'DDR4-2933 (PC4-23466)'
+      }
+   }
 ]
 
 

@@ -11,8 +11,7 @@ function Element(props) {
             <div id="info">
                 <h2>
                   <span id='sp1'>Nazwa: {props.producent} {props.model}<br></br></span>
-                  <span id='sp2'>{props.main1}/{props.main2}<br></br></span>
-                  <span id='sp3'>{props.jeden}|{props.dwa}|{props.trzy}|{props.cztery}</span>
+                  <span id='sp2'>{props.main1}  {props.main2}  {props.jeden}  |  {props.dwa}  |  {props.trzy}  |  {props.cztery}<br></br></span>
                 </h2>
             </div>
             <div id="element_main">

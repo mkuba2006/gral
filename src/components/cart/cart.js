@@ -34,7 +34,13 @@ function Cart_main() {
                             />
                         ))}
                     </ul>
-                    #
+                    <div id='sum'>
+                        <h2 id='pc'>
+                        <div>Total price:</div>
+                        <div>{ctx.totalAmount} zł</div>
+                        </h2>
+                        <button id='order_button'>Order now</button>
+                    </div>
                 </div>
             }
         </>
