@@ -1,14 +1,11 @@
 import Header from "./components/static/header/header";
 import Aside from "./components/static/aside/aside";
-import List from "./components/logic/itemy";
-import { Fragment,useState, createContext } from "react";
-import { useContext } from "react";
-import Items from "./components/items/items";
+import Items from "./components/items/render_list";
 import Provider from "./components/logic/car_provider";
 import Fog from "./components/static/fog";
 import OpenProvider from "./components/logic/open_provider";
-import OpenContext from "./components/logic/open_context";
 import Cart_main from "./components/cart/cart";
+import ListProvider from "./components/logic/itemy_provider";
 
 function App() {
   const Listvalue = {
@@ -21,12 +18,12 @@ function App() {
     <Provider>
       <OpenProvider>
         <Fog />
-        <Header/>
-        <List.Provider value={Listvalue}>
+        <ListProvider value={Listvalue}>
+          <Header/>
           <Aside/>
-        </List.Provider>
-        <Cart_main />
-        <Items />
+          <Cart_main />
+          <Items />
+        </ListProvider>
       </OpenProvider>
     </Provider>
   );

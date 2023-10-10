@@ -8,11 +8,8 @@ import Element from './element';
 import './cart.css'
 
 function Cart_main() {
-
     const ctx = useContext(CartContext);
     const otx = useContext(OpenContext);
-
-
     return (
         <>
             {otx.seeCart &&

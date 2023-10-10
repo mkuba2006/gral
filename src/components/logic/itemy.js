@@ -1,6 +1,8 @@
-import React from 'react';
-const List = React.createContext({
+import React, { createContext, useState } from 'react';
+
+const ListContext = createContext({
   name: '',
+  getit: (newName) => {},
 });
 
-export default List;
+export default ListContext;

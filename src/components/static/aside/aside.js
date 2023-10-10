@@ -1,16 +1,15 @@
 import { useContext, useState } from "react";
 import classes from "./aside.module.css";
-import List from "../../logic/itemy";
 import Head from "./sidebar-header";
 import NavItems from "./dane";
-import Ul from "./ul";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import OpenContext from "../../logic/open_context"
+import OpenContext from "../../logic/open_context";
 
+import ListContext from "../../logic/itemy";
 
 
 const Aside = () => {
-  const it = useContext(List);
+  const ltx = useContext(ListContext);
   const [isOpen, setIsOpen] = useState(false);
   const [expandedGroup, setExpandedGroup] = useState(null);
 
@@ -22,8 +21,9 @@ const Aside = () => {
   const setIt = (i) => {
     change();
     setIsOpen(!isOpen);
-    it.name = i;
-    console.log(it.name);
+  };
+  const lst = (i) => {
+    ltx.getit(i);
   };
 
   const toggleGroup = (index) => {
@@ -46,7 +46,7 @@ const Aside = () => {
                       <p>
                       {expandedGroup === index &&
                           item.options.map((option, optionIndex) => (
-                          <li key={option} onClick={() => {setIsOpen(!isOpen); setIt(option)}} className={classes.sidebar_li}>{option}</li>
+                          <li key={option} onClick={() => {setIsOpen(!isOpen); setIt(option); lst(option)}} className={classes.sidebar_li}>{option}</li>
                       ))}
                       </p>
                     </button>

@@ -2,8 +2,6 @@ import Form from "./form";
 import CartContext from "../logic/cart_context";
 import classes from './item.module.css';
 import { useContext } from "react";
-
-
 function Item(props) {
   const ctx = useContext(CartContext);
 

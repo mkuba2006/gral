@@ -4,7 +4,7 @@ const NavItems = [
     {
       name: "Kart graficzne",
       img: faTachographDigital,
-      options: ["AMD Radeon", "nVidia GeForce"]
+      options: ["AMD Radeon", "NVIDIA GeForce"]
     },
     {
       name: "Procesory",

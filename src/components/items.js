@@ -1,8 +1,4 @@
-import Item from "./item";
-import { useContext } from "react";
-import OpenContext from "../logic/open_context";
-import classes from './item.module.css';
-const itemy = [
+export const itemy = [
     {
        id:1,
        img: 'https://bizserver.eu/5956-thickbox_default/palit-karta-graficzna-geforce-rtx-3080-gamingpro-10gb-gddr6x-320bit-hdmi3dp.jpg',
@@ -11,7 +7,8 @@ const itemy = [
        info1: '10 GB GDDR6X',
        info2: 'GDDR6X',
        cena: '2499',
-    
+       szukaj:'NVIDIA GeForce',
+
        szczegol: {
         jeden: '7680x4320',
         dwa: '760 GB/s',
@@ -28,6 +25,7 @@ const itemy = [
        info1: '12 GB GDDR6',
        info2: 'GDDR6',
        cena: '1899',
+       szukaj:'AMD Radeon',
        szczegol: {
         jeden: '7680x4320',
         dwa: '384 GB/s',
@@ -40,12 +38,11 @@ const itemy = [
        img: 'https://hanzo.com.pl/userdata/public/gfx/68874/Karta-graficzna-Asus-ROG-Strix-GeForce-RTX-3090-White-OC-Edition-24GB-GDDR6X.jpg',
        producent: 'ASUS',
        model: 'ROG Strix GeForce RTX 3090',
-
        info1: '24 GB GDDR6X',
        info2: 'GDDR6X',
-
        cena: '3499',
-        
+       szukaj:'NVIDIA GeForce',
+
        szczegol: {
         jeden: '7680x4320',
         dwa: '936 GB/s',
@@ -62,7 +59,8 @@ const itemy = [
        info1: '6 GB GDDR6',
        info2: 'GDDR6',
        cena: '1099',
-        
+       szukaj:'NVIDIA GeForce',
+
        szczegol: {
         jeden: '7680x4320',
         dwa: '288 GB/s',
@@ -79,7 +77,8 @@ const itemy = [
        info1: '4 GB GDDR5',
        info2: 'GDDR5',
        cena: '699',
-        
+       szukaj:'NVIDIA GeForce',
+
        szczegol: {
         jeden: '7680x4320',
         dwa: '112 GB/s',
@@ -96,7 +95,8 @@ const itemy = [
        info1: '12 GB GDDR6',
        info2: 'GDDR6',
        cena: '1499',
-        
+       szukaj:'NVIDIA GeForce',
+
        szczegol: {
         jeden: '7680x4320',
         dwa: '360 GB/s',
@@ -113,7 +113,8 @@ const itemy = [
        info1: '16 GB GDDR6',
        info2: 'GDDR6',
        cena: '2199',
-        
+       szukaj:'AMD Radeon',
+
        szczegol: {
         jeden: '7680x4320',
         dwa: '512 GB/s',
@@ -130,7 +131,8 @@ const itemy = [
        info1: '6 GB GDDR5',
        info2: 'GDDR5',
        cena: '999',
-        
+       szukaj:'NVIDIA GeForce',
+
        szczegol: {
         jeden: '7680x4320',
         dwa: '192 GB/s',
@@ -147,7 +149,8 @@ const itemy = [
        info1: '8 GB GDDR6',
        info2: 'GDDR6',
        cena: '1799',
-        
+       szukaj:'NVIDIA GeForce',
+
        szczegol: {
         jeden: '7680x4320',
         dwa: '448 GB/s',
@@ -164,7 +167,8 @@ const itemy = [
        info1: '8 GB GDDR6',
        info2: 'GDDR6',
        cena: '899',
-    
+       szukaj:'AMD Radeon',
+
        szczegol: {
         jeden: '7680x4320',
         dwa: '448 GB/s',
@@ -180,46 +184,30 @@ const itemy = [
       info1: '',
       info2: '',
       cena: '4499',
-   
+      szukaj: 'Socket 2066',
+
       szczegol: {
        jeden: '3.3 GHz (4.6 GHz w trybie turbo)',
        dwa: '14 rdzeni',
        trzy: 'Socket 2066',
        cztery: 'DDR4-2933 (PC4-23466)'
       }
+   },
+   {
+      id:12,
+      img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/2/pr_2023_2_24_14_19_6_20_00.jpg',
+      producent: 'AMD',
+      model: 'Ryzen 9 7950X3D',
+      info1: '',
+      info2: '',
+      cena: '3199',
+      szukaj: 'Socket AM5',
+
+      szczegol: {
+       jeden: '4.2 GHz (5.7 GHz w trybie turbo)',
+       dwa: '16 rdzeni',
+       trzy: 'Socket AM5',
+       cztery: '32 wątki'
+      }
    }
 ]
-
-
-function Items() {
-   const Otx = useContext(OpenContext);
-
-    return (
-      <>
-         {!Otx.seeCart &&
-            <ul className={classes.ul}>
-               {itemy.map((ite)=>(
-                     <Item
-                        key={ite.model}
-                        id={ite.id}
-                        model={ite.model}
-                        amount={ite.amount}
-                        cena={ite.cena}
-                        img={ite.img}
-                        pamiec={ite.Pojemność_pamięci}
-                        producent={ite.producent}
-                        jed={ite.szczegol.jeden}
-                        dwa={ite.szczegol.dwa}
-                        trzy={ite.szczegol.trzy}
-                        cztery={ite.szczegol.cztery}
-                        info1={ite.info1}
-                        info2={ite.info2}
-                     />
-               ))}
-            </ul>
-         }
-      </>
-    );
-}
-  
-export default Items;
