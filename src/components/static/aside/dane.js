@@ -31,10 +31,10 @@ const NavItems = [
         "Socket AM3 / AM3+",
         "Socket AM4",
         "Socket AM5",
-        "Socket LGA1151",
-        "Socket LGA2066",
-        "Socket LGA1200",
-        "Socket LGA1700",
+        "Socket LGA 1151",
+        "Socket LGA 2066",
+        "Socket LGA 1200",
+        "Socket LGA 1700",
         "Socket TR4"
       ]
     },

@@ -17,11 +17,7 @@ function Items() {
          {!Otx.seeCart &&
             <ul onClick={tr} className={classes.ul}>
                {itemy.filter((item)=>{
-                  if(ltx.name.toLowerCase() === ''){
-                     return item.szukaj;
-                  }else{
-                     return ltx.name.toLowerCase() === item.szukaj.toLowerCase()
-                  }
+                  return ltx.name.toLowerCase() === '' ? item : ltx.name.toLowerCase() === item.szukaj.toLowerCase()
                }).map((ite)=>(
                      <Item
                         key={ite.model}
