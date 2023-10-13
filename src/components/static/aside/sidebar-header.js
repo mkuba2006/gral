@@ -1,6 +1,4 @@
-import { useContext, useState } from "react";
 import classes from "./aside.module.css";
-import List from "../../logic/itemy";
 
 
 

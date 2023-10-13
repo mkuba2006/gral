@@ -1,0 +1,26 @@
+#filters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+label {
+    font-weight: bold;
+}
+select {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 0;
+}
+select:focus {
+    outline: none;
+}
+select option {
+    font-size: 15px;
+}
+#wynik-sortowania {
+    margin-top: 10px;
+    font-size: 18px;
+}

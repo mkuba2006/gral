@@ -1,6 +1,5 @@
 import { faShoppingBag } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useContext } from 'react';
 function Cart() {
   return (
     <div className="cart">

@@ -1,24 +1,37 @@
 import Item from "./item";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import OpenContext from "../logic/open_context";
 import classes from './item.module.css';
 import { itemy } from "../items";
-import ListContext from "../logic/itemy"
+import ListContext from "../logic/itemy";
+
 
 function Items() {
    const Otx = useContext(OpenContext);
    const ltx = useContext(ListContext);
-   const tr = () =>{
-      console.log(ltx.name)
+   const val = ltx.sort;
+
+   if (val === "cena-malejaco") {
+      itemy.sort((a, b) => b.cena - a.cena);
+   } else if (val === "cena-rosnaco") {
+      itemy.sort((a, b) => a.cena - b.cena);
+   } else if (val === "nazwa-malejaco") {
+      itemy.sort((a, b) => a.producent.localeCompare(b.producent));
+   } else if (val === "nazwa-rosnaco") {
+      itemy.sort((a, b) => b.producent.localeCompare(a.producent));
+   }else if(val === "sortuj"){
+      itemy.sort((a, b) => a.id - b.id);
    }
 
-    return (
+   return (
       <>
-         {!Otx.seeCart &&
-            <ul onClick={tr} className={classes.ul}>
-               {itemy.filter((item)=>{
-                  return ltx.name.toLowerCase() === '' ? item : ltx.name.toLowerCase() === item.szukaj.toLowerCase()
-               }).map((ite)=>(
+         {!Otx.seeCart && (
+            <ul className={classes.ul}>
+               {itemy.filter((item) =>
+                     ltx.name.toLowerCase() === ''
+                        ? item
+                        : ltx.name.toLowerCase() === item.szukaj.toLowerCase()
+                  ).map((ite) => (
                      <Item
                         key={ite.model}
                         id={ite.id}
@@ -35,19 +48,11 @@ function Items() {
                         info1={ite.info1}
                         info2={ite.info2}
                      />
-               ))}
+                  ))}
             </ul>
-         }
+         )}
       </>
-    );
+   );
 }
-  
-
-
-{/* 
-.filter((item)=>{
-   return ltx.name.toLowerCase() === item.szukaj.toLowerCase()
-}) 
-*/}
 
 export default Items;

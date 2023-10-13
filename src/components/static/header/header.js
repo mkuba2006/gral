@@ -1,16 +1,13 @@
 import './header.css';
 import Cart from './cart';
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import CartContext from '../../logic/cart_context'
 import OpenContext from '../../logic/open_context';
-import List from '../../logic/itemy';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Element from './element';
 
 
 function Header() {
   const Otx = useContext(OpenContext);
-  const change = () =>{Otx.setOpen()};
   const changeH = () =>{Otx.setHover()};
   const changeC = () =>{Otx.setCart(); console.log('cart: ',Otx.seeCart);};
 
