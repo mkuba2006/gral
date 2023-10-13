@@ -10,6 +10,9 @@ function Items() {
    const Otx = useContext(OpenContext);
    const ltx = useContext(ListContext);
    const val = ltx.sort;
+   const price = ltx.price;
+
+
 
    if (val === "cena-malejaco") {
       itemy.sort((a, b) => b.cena - a.cena);
@@ -27,11 +30,10 @@ function Items() {
       <>
          {!Otx.seeCart && (
             <ul className={classes.ul}>
-               {itemy.filter((item) =>
-                     ltx.name.toLowerCase() === ''
-                        ? item
-                        : ltx.name.toLowerCase() === item.szukaj.toLowerCase()
-                  ).map((ite) => (
+               {itemy
+               .filter((item) => ltx.name.toLowerCase() === ''? item: ltx.name.toLowerCase() === item.szukaj.toLowerCase())
+               .filter((item) => price == '' ? item: item.cena < price)
+               .map((ite) => (
                      <Item
                         key={ite.model}
                         id={ite.id}

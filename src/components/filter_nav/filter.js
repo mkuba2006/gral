@@ -4,7 +4,7 @@ import './filter.css'
 
 
 
-function Filter(props) {
+function Filter() {
 
     return (
         <div id="filters">

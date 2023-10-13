@@ -6,7 +6,7 @@ export const itemy = [
        model: 'GeForce RTX 3080',
        info1: '10 GB GDDR6X',
        info2: 'GDDR6X',
-       cena: '2499',
+       cena: Number(2499),
        szukaj:'NVIDIA GeForce',
 
        szczegol: {
@@ -24,7 +24,7 @@ export const itemy = [
        model: 'Radeon RX 6700 XT',
        info1: '12 GB GDDR6',
        info2: 'GDDR6',
-       cena: '1899',
+       cena: Number(1899),
        szukaj:'AMD Radeon',
        szczegol: {
         jeden: '7680x4320',
@@ -40,7 +40,7 @@ export const itemy = [
        model: 'ROG Strix GeForce RTX 3090',
        info1: '24 GB GDDR6X',
        info2: 'GDDR6X',
-       cena: '3499',
+       cena: Number(3499),
        szukaj:'NVIDIA GeForce',
 
        szczegol: {
@@ -58,7 +58,7 @@ export const itemy = [
        model: 'GeForce GTX 1660 Ti',
        info1: '6 GB GDDR6',
        info2: 'GDDR6',
-       cena: '1099',
+       cena: Number(1099),
        szukaj:'NVIDIA GeForce',
 
        szczegol: {
@@ -76,7 +76,7 @@ export const itemy = [
        model: 'GeForce GTX 1050 Ti',
        info1: '4 GB GDDR5',
        info2: 'GDDR5',
-       cena: '699',
+       cena: Number(699),
        szukaj:'NVIDIA GeForce',
 
        szczegol: {
@@ -94,7 +94,7 @@ export const itemy = [
        model: 'GeForce RTX 3060',
        info1: '12 GB GDDR6',
        info2: 'GDDR6',
-       cena: '1499',
+       cena: Number(1499),
        szukaj:'NVIDIA GeForce',
 
        szczegol: {
@@ -112,7 +112,7 @@ export const itemy = [
        model: 'Radeon RX 6800',
        info1: '16 GB GDDR6',
        info2: 'GDDR6',
-       cena: '2199',
+       cena: Number(2199),
        szukaj:'AMD Radeon',
 
        szczegol: {
@@ -130,7 +130,7 @@ export const itemy = [
        model: 'GeForce GTX 1660',
        info1: '6 GB GDDR5',
        info2: 'GDDR5',
-       cena: '999',
+       cena: Number(999),
        szukaj:'NVIDIA GeForce',
 
        szczegol: {
@@ -148,7 +148,7 @@ export const itemy = [
        model: 'GeForce RTX 3070',
        info1: '8 GB GDDR6',
        info2: 'GDDR6',
-       cena: '1799',
+       cena: Number(1799),
        szukaj:'NVIDIA GeForce',
 
        szczegol: {
@@ -166,7 +166,7 @@ export const itemy = [
        model: 'Radeon RX 5500 XT',
        info1: '8 GB GDDR6',
        info2: 'GDDR6',
-       cena: '899',
+       cena: Number(899),
        szukaj:'AMD Radeon',
 
        szczegol: {
@@ -183,7 +183,7 @@ export const itemy = [
       model: 'Core i9-10940X',
       info1: '',
       info2: '',
-      cena: '4499',
+      cena: Number(4499),
       szukaj: 'Socket 2066',
 
       szczegol: {
@@ -200,7 +200,7 @@ export const itemy = [
       model: 'Ryzen 9 7950X3D',
       info1: '',
       info2: '',
-      cena: '3199',
+      cena: Number(3199),
       szukaj: 'Socket AM5',
 
       szczegol: {
@@ -217,7 +217,7 @@ export const itemy = [
       model: 'Core i9-12900K',
       info1: '',
       info2: '',
-      cena: '3499',
+      cena: Number(3499),
       szukaj: 'Socket LGA 1700',
    
       szczegol: {
@@ -234,7 +234,7 @@ export const itemy = [
       model: 'Ryzen 7 6800X',
       info1: '',
       info2: '',
-      cena: '2499',
+      cena: Number(2499),
       szukaj: 'Socket AM4',
    
       szczegol: {
@@ -255,7 +255,7 @@ export const itemy = [
       model: 'Core i7-12700',
       info1: '',
       info2: '',
-      cena: '2999',
+      cena: Number(2999),
       szukaj: 'Socket 1700',
    
       szczegol: {
@@ -273,7 +273,7 @@ export const itemy = [
       model: 'Ryzen 5 5600X',
       info1: '',
       info2: '',
-      cena: '1999',
+      cena: Number(1999),
       szukaj: 'Socket AM4',
    
       szczegol: {
@@ -291,7 +291,7 @@ export const itemy = [
       model: 'Core i5-12600K',
       info1: '',
       info2: '',
-      cena: '2299',
+      cena: Number(2299),
       szukaj: 'Socket 1700',
    
       szczegol: {
@@ -309,7 +309,7 @@ export const itemy = [
       model: 'Ryzen 7 5700X',
       info1: '',
       info2: '',
-      cena: '809',
+      cena: Number(809),
       szukaj: 'Socket AM4',
    
       szczegol: {
@@ -327,7 +327,7 @@ export const itemy = [
       model: 'i7-13700KF',
       info1: '',
       info2: '',
-      cena: '1999',
+      cena: Number(1999),
       szukaj: 'Socket 1700',
    
       szczegol: {
@@ -346,7 +346,7 @@ export const itemy = [
       model: '3600 MHz (PC4-28800)',
       info1: '32 GB (2x16 GB)',
       info2: '',
-      cena: '339',
+      cena: Number(339),
       szukaj: 'DDR 4',
    
       szczegol: {
@@ -364,7 +364,7 @@ export const itemy = [
       model: '3200MHz',
       info1: '16GB (2x8GB',
       info2: '',
-      cena: '205',
+      cena: Number(205),
       szukaj: 'DDR 4',
    
       szczegol: {
@@ -383,7 +383,7 @@ export const itemy = [
       model: '6400MHz',
       info1: '32GB (2x16GB)',
       info2: '',
-      cena: '539',
+      cena: Number(539),
       szukaj: 'DDR 5',
    
       szczegol: {
@@ -402,7 +402,7 @@ export const itemy = [
       model: '6000MHz',
       info1: '32GB (2x16GB)',
       info2: '',
-      cena: '2259',
+      cena: Number(2259),
       szukaj: 'DDR 5',
    
       szczegol: {

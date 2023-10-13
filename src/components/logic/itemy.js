@@ -5,6 +5,8 @@ const ListContext = createContext({
   getit: (newName) => {},
   sort: '',
   getsort: (s) => {},
+  price: '',
+  getprice: (s) => {},
 });
 
 export default ListContext;
