@@ -18,6 +18,11 @@ const ListProvider = ({ children }) => {
   const getprice = (s) => {
     sprice(s);
   };
+  const getf = (s) => {
+    for(let i = 0; i < s.length;i++){
+      console.log(s[i].producent);
+    }
+  };
 
   const values = {
     name: name,
@@ -26,6 +31,8 @@ const ListProvider = ({ children }) => {
     getsort: getsort,
     price: price,
     getprice: getprice,
+    firmy: [],
+    getfirmy : getf,
   }
 
   return (

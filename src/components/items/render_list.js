@@ -5,7 +5,6 @@ import classes from './item.module.css';
 import { itemy } from "../items";
 import ListContext from "../logic/itemy";
 
-
 function Items() {
    const Otx = useContext(OpenContext);
    const ltx = useContext(ListContext);
@@ -49,6 +48,7 @@ function Items() {
                         cztery={ite.szczegol.cztery}
                         info1={ite.info1}
                         info2={ite.info2}
+                        onClick={ltx.getfirmy(itemy)}
                      />
                   ))}
             </ul>
