@@ -13,48 +13,54 @@ function Items() {
 
 
 
+
    if (val === "cena-malejaco") {
-      itemy.sort((a, b) => b.cena - a.cena);
-   } else if (val === "cena-rosnaco") {
+      console.clear();
+      itemy.sort((a, b) => b.cena - a.cena)
+   }else if (val === "cena-rosnaco") {
+      console.clear();
       itemy.sort((a, b) => a.cena - b.cena);
    } else if (val === "nazwa-malejaco") {
+      console.clear();
       itemy.sort((a, b) => a.producent.localeCompare(b.producent));
    } else if (val === "nazwa-rosnaco") {
+      console.clear();
       itemy.sort((a, b) => b.producent.localeCompare(a.producent));
    }else if(val === "sortuj"){
+      console.clear();
       itemy.sort((a, b) => a.id - b.id);
    }
 
    return (
       <>
          {!Otx.seeCart && (
-            <ul className={classes.ul}>
+            <ul className={classes.ul} onMouseEnter={ltx.getfirmy(itemy)}>
                {itemy
-               .filter((item) => ltx.name.toLowerCase() === ''? item: ltx.name.toLowerCase() === item.szukaj.toLowerCase())
-               .filter((item) => price == '' ? item: item.cena < price)
+               .filter((item) => ltx.name.toLowerCase() === '' ? item : ltx.name.toLowerCase() === item.szukaj.toLowerCase())
+               .filter((item) => price === '' ? item : item.cena < price)
                .map((ite) => (
-                     <Item
-                        key={ite.model}
-                        id={ite.id}
-                        model={ite.model}
-                        amount={ite.amount}
-                        cena={ite.cena}
-                        img={ite.img}
-                        pamiec={ite.Pojemność_pamięci}
-                        producent={ite.producent}
-                        jed={ite.szczegol.jeden}
-                        dwa={ite.szczegol.dwa}
-                        trzy={ite.szczegol.trzy}
-                        cztery={ite.szczegol.cztery}
-                        info1={ite.info1}
-                        info2={ite.info2}
-                        onClick={ltx.getfirmy(itemy)}
-                     />
-                  ))}
+                  <Item
+                     key={ite.model}
+                     id={ite.id}
+                     model={ite.model}
+                     amount={ite.amount}
+                     cena={ite.cena}
+                     img={ite.img}
+                     pamiec={ite.Pojemność_pamięci}
+                     producent={ite.producent}
+                     jed={ite.szczegol.jeden}
+                     dwa={ite.szczegol.dwa}
+                     trzy={ite.szczegol.trzy}
+                     cztery={ite.szczegol.cztery}
+                     info1={ite.info1}
+                     info2={ite.info2}
+                     onClick={ltx.getfirmy(ite)}
+                  />
+               ))}
             </ul>
          )}
       </>
-   );
+   );  
 }
 
 export default Items;

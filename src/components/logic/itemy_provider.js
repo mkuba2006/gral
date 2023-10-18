@@ -6,6 +6,7 @@ const ListProvider = ({ children }) => {
   const [name, sName] = useState(''); 
   const [sorts, ssort] = useState(''); 
   const [price, sprice] = useState(''); 
+  const [firmy, gfirmy] = useState([]); 
 
   const getName = (newName) => {
     sName(newName);
@@ -19,9 +20,14 @@ const ListProvider = ({ children }) => {
     sprice(s);
   };
   const getf = (s) => {
-    for(let i = 0; i < s.length;i++){
-      console.log(s[i].producent);
+    const arr = [];
+    for (let i = 0; i < s.length; i++) {
+      let producent = s[i].producent;
+      if (arr.indexOf(producent) === -1) {
+        arr.push(producent);
+      }
     }
+    console.log(arr);
   };
 
   const values = {
