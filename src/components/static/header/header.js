@@ -35,6 +35,7 @@ function Header() {
               <div id="elements">
                 {ctx.items.map((item)=>(
                     <Element
+                    key={item.id}
                     img={item.img}
                     model={item.model}
                     amount = {item.amount}

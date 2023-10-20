@@ -40,7 +40,7 @@ function Items() {
                .filter((item) => price === '' ? item : item.cena < price)
                .map((ite) => (
                   <Item
-                     key={ite.model}
+                     key={ite.id}
                      id={ite.id}
                      model={ite.model}
                      amount={ite.amount}

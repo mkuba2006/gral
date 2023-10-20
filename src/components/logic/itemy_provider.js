@@ -10,6 +10,7 @@ const ListProvider = ({ children }) => {
 
   const getName = (newName) => {
     sName(newName);
+    console.log(newName);
   };
 
   const getsort = (s) => {
@@ -27,7 +28,6 @@ const ListProvider = ({ children }) => {
         arr.push(producent);
       }
     }
-    console.log(arr);
   };
 
   const values = {

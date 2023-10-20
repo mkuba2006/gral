@@ -12,7 +12,7 @@ function Price_range() {
   };
 
   return (
-    <div>
+    <div id='cena'>
       <input type="range" id="slider" name="slider" min="0" max="5000" step="100" value={sliderValue} onChange={handleSliderChange}/>
       <span id="sliderValue">{sliderValue}zł</span>
     </div>

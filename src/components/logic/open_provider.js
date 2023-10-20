@@ -10,18 +10,18 @@ const reducer = (state, action) => {
 
 const OpenProvider = (props) => {
   const [isOpen, change] = useReducer(reducer, first);
+  const [isHover, changeH] = useReducer(reducer, first);
+  const [isCart, changeC] = useReducer(reducer, first);
+
+  
   const toggleOpen = () => {
     change({ type: 'TOGGLE' });
   };
 
-
-
-  const [isHover, changeH] = useReducer(reducer, first);
   const toggleHover = () => {
     changeH({ type: 'HOVER' });
   };
 
-  const [isCart, changeC] = useReducer(reducer, first);
   const toggleCart = () => {
     changeC({ type: 'CART' });
   };

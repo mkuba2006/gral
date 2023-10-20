@@ -17,6 +17,7 @@ function Cart_main() {
                     <ul id="cart_ul">
                         {ctx.items.map((item)=>(
                             <Element
+                                key={item.id}
                                 img={item.img}
                                 amount = {item.amount}
                                 price={item.cena}
@@ -36,7 +37,7 @@ function Cart_main() {
                         <div>Total price:</div>
                         <div>{ctx.totalAmount} zł</div>
                         </h2>
-                        <button id='order_button'>Order now</button>
+                        <button id='order_button' onClick={otx.setCart}>Order now</button>
                     </div>
                 </div>
             }

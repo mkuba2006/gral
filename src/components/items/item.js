@@ -8,6 +8,7 @@ function Item(props) {
   const addtocart = (ilosc) => {
 
     ctx.addItem({
+      key: props.id,
       id: props.id,
       model: props.model,
       amount: Number(ilosc),
