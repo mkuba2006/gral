@@ -12,8 +12,8 @@ function Filter() {
     const ltx = useContext(ListContext)
     const clc= ()=>{
         ltx.getit('');
+        ltx.getprice('5000');
     }
-
     return (
         (!Otx.seeCart &&
         <div id="filters">

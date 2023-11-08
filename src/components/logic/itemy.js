@@ -5,7 +5,7 @@ const ListContext = createContext({
   getit: (newName) => {},
   sort: '',
   getsort: (s) => {},
-  price: '',
+  price: '5000',
   getprice: (s) => {},
   firmy: [],
   getfirmy : (f)=>{},

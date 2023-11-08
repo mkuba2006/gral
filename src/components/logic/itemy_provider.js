@@ -5,7 +5,7 @@ import { useState } from "react";
 const ListProvider = ({ children }) => {
   const [name, sName] = useState(''); 
   const [sorts, ssort] = useState(''); 
-  const [price, sprice] = useState(''); 
+  const [price, sprice] = useState(5000); 
   const [firmy, gfirmy] = useState([]); 
 
   const getName = (newName) => {

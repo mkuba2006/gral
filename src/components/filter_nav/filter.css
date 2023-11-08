@@ -4,14 +4,17 @@
     font-family: 'Montserrat', sans-serif;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
     width: 90%;
     min-width: 300px;
     margin: 0 auto;
+    margin-left: 93px;
 }
 
 #filters_one{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
     font-size: 15px;
 }
@@ -58,4 +61,31 @@ select option {
 }
 #reset_button svg{
     width: 20px;
+}
+
+@media screen and (max-width:600px) {
+    #filters{
+        flex-direction: column;
+        margin-left: 63px;
+    }
+    #filters_one{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 15px;
+    }
+    select{
+        width: 220px;
+    }
+     #cena{
+        width: 200px;
+    }
+    #cena{
+        flex-direction: column;
+        height: auto;
+    }
+    #reset_button{
+        margin-top: 20px;
+    }
 }
