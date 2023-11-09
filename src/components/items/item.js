@@ -1,10 +1,19 @@
 import Form from "./form";
 import CartContext from "../logic/cart_context";
 import classes from './item.module.css';
-import { useContext } from "react";
+import React, { useState, useContext } from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart as solidHeart } from '@fortawesome/free-solid-svg-icons';
+import { faHeart as regularHeart } from '@fortawesome/free-regular-svg-icons';
+
+
+
+
 function Item(props) {
   const ctx = useContext(CartContext);
+  const [isSelected, setIsSelected] = useState('solidHeart');
 
+  
   const addtocart = (ilosc) => {
 
     ctx.addItem({
@@ -25,6 +34,32 @@ function Item(props) {
     // console.log(props.id,props.model,Number(ilosc));
   }
 
+  const setSelected = (item) => {
+    if (isSelected === 'solidHeart') {
+      setIsSelected('regularHeart');
+      ctx.addToFav({
+        key: props.id,
+        id: props.id,
+        model: props.model,
+        cena: props.cena,
+        img: props.img,
+        producent: props.producent,
+        info1: props.info1,
+      });
+    } else {
+      setIsSelected('solidHeart');
+      ctx.removeFromFav({
+        key: props.id,
+        id: props.id,
+        model: props.model,
+        // cena: props.cena,
+        img: props.img,
+        // producent: props.producent,
+        // info1: props.info1,
+      });
+    }
+  }
+
   return (
     <li className={classes.item}>
       <div className={classes.img_cont}>
@@ -35,7 +70,11 @@ function Item(props) {
         <p>{props.jed} | {props.dwa} | {props.trzy}</p>
         <div className={classes.sum}>
           <h3>{props.cena} zł</h3>
-          <Form onAdd={addtocart} />
+
+          <button type="submit" onClick={setSelected} className={classes.heart}>
+            <FontAwesomeIcon icon={isSelected === 'solidHeart' ? regularHeart : solidHeart} className="fa-solid" />
+          </button>
+          <Form onAdd={addtocart}  />
         </div>
       </div>
       <div id="underline"></div>

@@ -1,7 +1,11 @@
 import './element.css'
+import CartContext from '../../logic/cart_context';
+import { useContext } from 'react';
+
+
 
 function Element(props) {
-
+    const ctx = useContext(CartContext);
     return (
         <div id="elementt">
             <div id="img_container">

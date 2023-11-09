@@ -4,6 +4,11 @@ const CartContext = React.createContext({
   totalAmount: Number(0),
   addItem: (item) => {},
   removeItem: (id) => {},
+
+  favourites: [],
+  addToFav: (item) => {},
+  removeFromFav: (item) => {},
+
 });
 
 export default CartContext;

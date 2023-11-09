@@ -4,7 +4,7 @@ import { useContext, useEffect } from "react";
 import CartContext from '../../logic/cart_context'
 import OpenContext from '../../logic/open_context';
 import Element from './element';
-
+import FavList from './favlist';
 
 function Header() {
   const Otx = useContext(OpenContext);
@@ -22,12 +22,19 @@ function Header() {
 
     return (
       <div className="header">
-        <img src='https://www.gral.pl/images/logo-h2.gif'/>
+        <img id='mianhead' src='https://www.gral.pl/images/logo-h2.gif'/>
         <div>
-          <button id='button' onMouseEnter={changeH} onMouseLeave={changeH}>
-            <Cart/> Cart
-            <span>{length}</span>
-          </button>
+          <div id='buttons'>
+            <button id='button'>
+              <FavList/>
+              Favourite
+            </button>
+            <button id='button' onMouseEnter={changeH} onMouseLeave={changeH}>
+              <Cart/>
+              <span>{length}</span>
+              Cart
+            </button>
+          </div>
 
           {Otx.hover &&
             <div id="mainl" onMouseEnter={changeH} onMouseLeave={changeH}>

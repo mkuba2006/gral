@@ -1,9 +1,9 @@
-import { faShoppingBag } from '@fortawesome/free-solid-svg-icons';
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function Cart() {
   return (
     <div className="cart">
-      <FontAwesomeIcon id="icon" icon={faShoppingBag}/>
+      <FontAwesomeIcon id="icon" icon={faCartShopping}/>
     </div>
   );
 }

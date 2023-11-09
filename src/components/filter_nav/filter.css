@@ -63,10 +63,12 @@ select option {
     width: 20px;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:880px) {
     #filters{
-        flex-direction: column;
-        margin-left: 63px;
+        width: 100vw;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-left: 0;
     }
     #filters_one{
         display: flex;
@@ -87,5 +89,13 @@ select option {
     }
     #reset_button{
         margin-top: 20px;
+    }
+}
+
+
+
+@media screen and (max-width:700px) {
+    #filters{
+        flex-direction: column;
     }
 }
