@@ -5,11 +5,15 @@ import CartContext from '../../logic/cart_context'
 import OpenContext from '../../logic/open_context';
 import Element from './element';
 import FavList from './favlist';
+import Test from '../../fav/test';
 
 function Header() {
   const Otx = useContext(OpenContext);
   const changeH = () =>{Otx.setHover()};
   const changeC = () =>{Otx.setCart(); console.log('cart: ',Otx.seeCart);};
+  const changeFavH = () =>{Otx.setFavHover()};
+
+
 
   const ctx = useContext(CartContext);
   const {items} = ctx; 
@@ -22,10 +26,10 @@ function Header() {
 
     return (
       <div className="header">
-        <img id='mianhead' src='https://www.gral.pl/images/logo-h2.gif'/>
+        <img id='mainhead' src='https://www.gral.pl/images/logo-h2.gif'/>
         <div>
           <div id='buttons'>
-            <button id='button'>
+            <button id='button' onClick={changeFavH}>
               <FavList/>
               Favourite
             </button>
@@ -35,6 +39,18 @@ function Header() {
               Cart
             </button>
           </div>
+
+          {Otx.Favhover &&
+            <div id="favourites">
+              {ctx.favourites.map((item)=>(
+                <Test
+                  key={item.id}
+                  img={item.img}
+                  model ={item.model}
+                />
+              ))}
+            </div>
+          }
 
           {Otx.hover &&
             <div id="mainl" onMouseEnter={changeH} onMouseLeave={changeH}>

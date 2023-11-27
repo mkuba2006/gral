@@ -7,7 +7,7 @@ import OpenProvider from "./components/logic/open_provider";
 import Cart_main from "./components/cart/cart";
 import ListProvider from "./components/logic/itemy_provider";
 import Filter from "./components/filter_nav/filter";
-import Fav from "./components/fav/cart";
+// import Fav from "./components/fav/cart";
 
 function App() {
   const Listvalue = {
@@ -24,7 +24,6 @@ function App() {
           <Aside/>
           <Cart_main />
           <Filter/>
-          <Fav/>
           <Items />
         </ListProvider>
       </OpenProvider>

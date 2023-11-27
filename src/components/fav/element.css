@@ -62,16 +62,20 @@
 }
 
 
-#mainl {
-    font-family: 'Montserrat', sans-serif;
-    width: 70vw;
-    height: auto;
-    min-height: 0;
+#favourites {
+    position: absolute;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin: 0 auto;
-    gap: 30px;
-    flex-wrap: wrap;
-    position: relative;
+    flex-direction: column;
+    width: 35vw;
+    min-width: 300px;
+    min-height: 300px;
+    max-height: 500px;
+    height: auto;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    background-color: white;
+    border-radius: 12px;
+    left: 50%;
+    top: 50%;
+    z-index: 100;
+    transform: translate(-50%, -50%);
 }

@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import CartContext from '../logic/cart_context';
 import Test from './test';
+import './element.css';
 
 function Fav() {
     const ctx = useContext(CartContext);
@@ -9,14 +10,14 @@ function Fav() {
         ))
     return (
         <>
-            <div id="mainl">
-                    {ctx.favourites.map((item)=>(
-                        <Test
-                            key={item.id}
-                            img={item.img}
-                            model ={item.model}
-                        />
-                    ))}
+            <div id="favourites">
+                {ctx.favourites.map((item)=>(
+                    <Test
+                        key={item.id}
+                        img={item.img}
+                        model ={item.model}
+                    />
+                ))}
             </div>
         </>
     );

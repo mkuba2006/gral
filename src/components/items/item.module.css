@@ -139,7 +139,15 @@ form button:hover {
     transform: scale(0.9);
 }
 
-
+.sinfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.sinfo .heart{
+    padding-top: 5px;
+}
 
 
 @media screen and (max-width: 1050px){

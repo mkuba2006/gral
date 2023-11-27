@@ -70,11 +70,13 @@ function Item(props) {
         <p>{props.jed} | {props.dwa} | {props.trzy}</p>
         <div className={classes.sum}>
           <h3>{props.cena} zł</h3>
-
+        <div className={classes.sinfo}>
           <button type="submit" onClick={setSelected} className={classes.heart}>
             <FontAwesomeIcon icon={isSelected === 'solidHeart' ? regularHeart : solidHeart} className="fa-solid" />
           </button>
           <Form onAdd={addtocart}  />
+        </div>
+
         </div>
       </div>
       <div id="underline"></div>

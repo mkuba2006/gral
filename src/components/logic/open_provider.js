@@ -1,40 +1,25 @@
 import React, { createContext, useReducer } from 'react';
 import OpenContext from './open_context';
-const first = false;
 
-const reducer = (state, action) => {
-    // console.log("stan",!state);
-    return !state;
-};
-  
+const reducer = (state, action) => !state;
 
 const OpenProvider = (props) => {
-  const [isOpen, change] = useReducer(reducer, first);
-  const [isHover, changeH] = useReducer(reducer, first);
-  const [isCart, changeC] = useReducer(reducer, first);
+  const [isOpen, change] = useReducer(reducer, false);
+  const [isHover, changeH] = useReducer(reducer, false);
+  const [isFavhover, changeFavH] = useReducer(reducer, false);
+  const [isCart, changeC] = useReducer(reducer, false);
 
-  
-  const toggleOpen = () => {
-    change({ type: 'TOGGLE' });
-  };
-
-  const toggleHover = () => {
-    changeH({ type: 'HOVER' });
-  };
-
-  const toggleCart = () => {
-    changeC({ type: 'CART' });
-  };
-
-
+  const toggle = (setter) => () => setter({ type: 'TOGGLE' });
 
   const OpenCTX = {
     open: isOpen,
-    setOpen: toggleOpen,
+    setOpen: toggle(change),
     hover: isHover,
-    setHover: toggleHover,
+    setHover: toggle(changeH),
+    Favhover: isFavhover,
+    setFavHover: toggle(changeFavH),
     seeCart: isCart,
-    setCart: toggleCart,
+    setCart: toggle(changeC),
   };
 
   return (
@@ -44,4 +29,4 @@ const OpenProvider = (props) => {
   );
 };
 
-export default OpenProvider ;
+export default OpenProvider;

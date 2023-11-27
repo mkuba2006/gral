@@ -9,7 +9,7 @@ function Test(props) {
             </div>
             <div id="info">
                 <h2>
-                  <span id='sp1'>Nazwa:{props.model}<br></br></span>
+                  <span id='sp1'>{props.model}<br></br></span>
                 </h2>
             </div>
         </div>

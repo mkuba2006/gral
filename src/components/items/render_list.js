@@ -11,9 +11,6 @@ function Items() {
    const val = ltx.sort;
    const price = ltx.price;
 
-
-
-
    if (val === "cena-malejaco") {
       console.clear();
       itemy.sort((a, b) => b.cena - a.cena)
