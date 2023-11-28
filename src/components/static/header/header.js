@@ -33,7 +33,7 @@ function Header() {
               <FavList/>
               Favourite
             </button>
-            <button id='button' onMouseEnter={changeH} onMouseLeave={changeH}>
+            <button id='button' onClick={changeH} >
               <Cart/>
               <span>{length}</span>
               Cart
@@ -53,7 +53,7 @@ function Header() {
           }
 
           {Otx.hover &&
-            <div id="mainl" onMouseEnter={changeH} onMouseLeave={changeH}>
+            <div id="mainl" onMouseLeave={changeH}>
             <h2 id='Cart_title'>Cart</h2>
               <div id="elements">
                 {ctx.items.map((item)=>(
