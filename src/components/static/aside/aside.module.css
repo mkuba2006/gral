@@ -9,7 +9,7 @@ button{
     font-size: 25px;
 }
 .sidebar{
-    z-index: 3;
+    z-index: 300;
     position: fixed;
     overflow: hidden;
     top: 0;
@@ -170,7 +170,7 @@ svg{
 @media screen and (max-width: 880px) {
     .sidebar{
         
-        z-index: 3;
+        z-index: 300;
         position: fixed;
         overflow: visible;
         top: 0;

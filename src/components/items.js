@@ -343,7 +343,7 @@ export const itemy = [
       id: 20,
       img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/4/pr_2021_4_27_12_55_1_344_02.jpg',
       producent: 'GOODRAM ',
-      model: '3600 MHz (PC4-28800)',
+      model: 'GOODRAM 3600 MHz (PC4-28800)',
       info1: '32 GB (2x16 GB)',
       info2: '',
       cena: Number(339),
@@ -361,7 +361,7 @@ export const itemy = [
       id: 21,
       img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/7/pr_2021_7_7_14_16_12_451_02.jpg',
       producent: 'Kingston',
-      model: '3200MHz',
+      model: 'Kingston 3200MHz',
       info1: '16GB (2x8GB',
       info2: '',
       cena: Number(205),
@@ -380,7 +380,7 @@ export const itemy = [
       id: 22,
       img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/8/pr_2023_8_3_13_7_52_603_00.jpg',
       producent: 'Lexar',
-      model: '6400MHz',
+      model: 'Lexar 6400MHz',
       info1: '32GB (2x16GB)',
       info2: '',
       cena: Number(539),
@@ -399,7 +399,7 @@ export const itemy = [
       id: 23,
       img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/12/pr_2021_12_17_11_51_5_362_00.jpg',
       producent: 'G.SKILL',
-      model: '6000MHz',
+      model: 'G.SKILL 6000MHz',
       info1: '32GB (2x16GB)',
       info2: '',
       cena: Number(2259),
@@ -407,6 +407,100 @@ export const itemy = [
    
       szczegol: {
          jeden: 'CL40',
+         dwa: '2 moduły',
+         trzy: '',
+         cztery: '',
+         piec: '',
+      }
+   },
+   {
+      id: 24,
+      img: 'https://prod-api.mediaexpert.pl/api/images/gallery_500_500/thumbnails/images/28/2830979/Pamiec-RAM-CORSAIR-Vengeance-Pro-RGB-32GB-3600MHz-front.jpg',
+      producent: 'Corsair',
+      model: 'Corsair 4000MHz',
+      info1: '32GB (2x16GB)',
+      info2: 'RGB Lighting',
+      cena: Number(799),
+      szukaj: 'DDR 4',
+   
+      szczegol: {
+         jeden: 'CL18',
+         dwa: '2 moduły',
+         trzy: 'RGB',
+         cztery: '',
+         piec: '',
+      }
+   }
+   ,
+   {
+      id: 25,
+      img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2020/3/pr_2020_3_10_14_46_46_355_00.jpg',
+      producent: 'Crucial',
+      model: 'Crucial 5600MHz',
+      info1: '64GB (2x32GB)',
+      info2: '',
+      cena: Number(1249),
+      szukaj: 'DDR 4',
+   
+      szczegol: {
+         jeden: 'CL22',
+         dwa: '2 moduły',
+         trzy: '',
+         cztery: '',
+         piec: '',
+      }
+   }
+   ,
+   {
+      id: 26,
+      img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/1/pr_2022_1_12_16_2_16_922_02.jpg',
+      producent: 'ADATA',
+      model: 'ADATA 3200MHz',
+      info1: '16GB (2x8GB)',
+      info2: 'XPG series',
+      cena: Number(189),
+      szukaj: 'DDR 4',
+   
+      szczegol: {
+         jeden: 'CL16',
+         dwa: '2 moduły',
+         trzy: 'XPG',
+         cztery: '',
+         piec: '',
+      }
+   }
+   ,
+   {
+      id: 27,
+      img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/2/pr_2021_2_11_11_18_32_575_00.jpg',
+      producent: 'Team Group',
+      model: 'Team Group 7200MHz',
+      info1: '16GB (2x8GB)',
+      info2: '',
+      cena: Number(329),
+      szukaj: 'DDR 4',
+   
+      szczegol: {
+         jeden: 'CL36',
+         dwa: '2 moduły',
+         trzy: '',
+         cztery: '',
+         piec: '',
+      }
+   }
+   ,
+   {
+      id: 28,
+      img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/4/pr_2023_4_17_14_29_17_82_00.jpg',
+      producent: 'Patriot',
+      model: 'Patriot 5000MHz',
+      info1: '32GB (2x16GB)',
+      info2: '',
+      cena: Number(999),
+      szukaj: 'DDR 4',
+   
+      szczegol: {
+         jeden: 'CL20',
          dwa: '2 moduły',
          trzy: '',
          cztery: '',
