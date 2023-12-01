@@ -1,9 +1,20 @@
 import './element.css'
+import OpenContext from '../logic/open_context';
+import { useContext } from 'react';
+
+
 
 function Test(props) {
 
+    const Otx = useContext(OpenContext);
+    const setopen = () =>{
+        Otx.setOpen();
+        Otx.setFavHover();
+    }
+
+
     return (
-        <div id="element">
+        <div id="element" onClick={setopen}>
             <div id="img_container">
                 <img src={props.img}/>
             </div>

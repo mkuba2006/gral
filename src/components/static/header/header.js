@@ -7,11 +7,14 @@ import Element from './element';
 import FavList from './favlist';
 import Test from '../../fav/test';
 import classes from './button.module.css'
+
+
 function Header() {
   const Otx = useContext(OpenContext);
+
   const changeH = () =>{Otx.setHover(); console.log(Otx.hover);};
   const changeC = () =>{Otx.setCart(); console.log('cart: ',Otx.seeCart);};
-  const changeFavH = () =>{Otx.setFavHover()};
+  const changeFavH = () =>{Otx.setFavHover();Otx.setOpen();};
 
   const ctx = useContext(CartContext);
   const {items} = ctx; 

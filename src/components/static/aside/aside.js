@@ -15,7 +15,7 @@ const Aside = () => {
 
   const Otx = useContext(OpenContext);
   const change = () =>{
-    Otx.setOpen()
+    Otx.setOpen();
   }
   
   const setIt = (i) => {
