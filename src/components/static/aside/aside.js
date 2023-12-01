@@ -12,19 +12,14 @@ const Aside = () => {
   const ltx = useContext(ListContext);
   const [isOpen, setIsOpen] = useState(false);
   const [expandedGroup, setExpandedGroup] = useState(null);
-
   const Otx = useContext(OpenContext);
-  const change = () =>{
-    Otx.setOpen();
-  }
-  
+
+  const change = () =>{Otx.setOpen();}
   const setIt = (i) => {
     change();
     setIsOpen(!isOpen);
   };
-  const lst = (i) => {
-    ltx.getit(i);
-  };
+  const lst = (i) => {ltx.getit(i);};
 
   const toggleGroup = (index) => {
     if (isOpen) {
@@ -36,7 +31,7 @@ const Aside = () => {
     <div>
       <aside  className={`${classes.sidebar} ${isOpen ? classes.open : ""}`}>
         <div className={classes.sidebar_inner}>
-          <Head onClick={() => {setIsOpen(!isOpen); change()}} />
+          <Head onClick={() => {setIsOpen(!isOpen); change();}} />
           <nav className={classes.sidebar_menu}>
           {NavItems.map((item, index) => (
             <div key={index} className={classes.sidebar_button}>

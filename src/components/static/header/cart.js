@@ -1,5 +1,6 @@
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { memo } from 'react';
 function Cart() {
   return (
     <div className="cart">
@@ -8,4 +9,4 @@ function Cart() {
   );
 }
   
- export default Cart;
+export default memo(Cart);

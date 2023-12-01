@@ -1,5 +1,6 @@
 #element{
     width: 100%;
+    min-height: 90px;
     height: 100px;
     overflow: hidden;
     display: flex;
@@ -46,6 +47,48 @@
     flex-direction: column;
 }
 
+
+
+
+#favourites {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    min-width: 300px;
+    max-height: 500px;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    top: 20%;
+    z-index: 400;
+    border: none;
+}
+#favourites h2{
+    font-size: 20px;
+}
+#elements{
+    height: 75%;
+    max-height: 450px;
+    overflow-y: auto;
+}
+
+#favourites #buttons{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+#favourites #buttons button{
+    padding: 8px 16px;
+    background-color: #9400FF;
+    font-size: 20px;
+    color: white;
+    border-radius: 8px;
+}
+
+
+
 @media screen and (max-width: 1200px) {
     #element{
         width: 100%;
@@ -59,23 +102,8 @@
         border-top: 0.1px solid rgb(199, 187, 187);
         gap: 15px;
     }
-}
-
-
-#favourites {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 35vw;
-    min-width: 300px;
-    min-height: 300px;
-    max-height: 500px;
-    height: auto;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
-    background-color: white;
-    border-radius: 12px;
-    left: 50%;
-    top: 50%;
-    z-index: 400;
-    transform: translate(-50%, -50%);
+    #favourites {
+        width: 60vw;
+        top: 120%;
+    }
 }

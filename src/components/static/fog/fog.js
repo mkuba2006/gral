@@ -1,6 +1,8 @@
 import "./fog.css";
-import { useContext } from "react";
+import { useContext, memo } from "react";
 import OpenContext from '../../logic/open_context';
+
+
 function Fog() {
   const {open} = useContext(OpenContext);
 
@@ -10,4 +12,4 @@ function Fog() {
     );
 }
   
- export default Fog;
+export default memo(Fog);

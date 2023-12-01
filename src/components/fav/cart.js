@@ -3,22 +3,27 @@ import CartContext from '../logic/cart_context';
 import Test from './test';
 import './element.css';
 import OpenContext from '../logic/open_context';
+
+
 function Fav() {
 
     const Otx = useContext(OpenContext);
-
     const ctx = useContext(CartContext);
-    ctx.favourites.map((item)=>(
-        console.log(ctx.favourites)
-    ))
+    // ctx.favourites.map((item)=>(
+    //     console.log(ctx.favourites)
+    // ))
     
     const setopen = () =>{
         Otx.setOpen();
+        Otx.setFavHover();
+        console.log('sope');
     }
 
     return (
         <>
-            <div id="favourites">
+            <dialog id="favourites">
+            <h2>Favourite</h2>
+            <div id='elements'>
                 {ctx.favourites.map((item)=>(
                     <Test
                         key={item.id}
@@ -27,6 +32,10 @@ function Fav() {
                     />
                 ))}
             </div>
+                <div id='buttons'>
+                    <button onClick={setopen}>Close</button>
+                </div>
+            </dialog>
         </>
     );
   }

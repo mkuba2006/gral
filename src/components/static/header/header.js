@@ -7,7 +7,7 @@ import Element from './element';
 import FavList from './favlist';
 import Test from '../../fav/test';
 import classes from './button.module.css'
-
+import Fav from '../../fav/cart';
 
 function Header() {
   const Otx = useContext(OpenContext);
@@ -37,17 +37,7 @@ function Header() {
             Cart
           </button>
         </div>
-        {Otx.Favhover &&
-          <div id="favourites">
-            {ctx.favourites.map((item)=>(
-              <Test
-                key={item.id}
-                img={item.img}
-                model ={item.model}
-              />
-            ))}
-          </div>
-        }
+        {Otx.Favhover && <Fav/>}
         {Otx.hover &&
           <div id="mainl" onMouseLeave={changeH} onClick={Otx.setHover(true)}>
           <h2 id='Cart_title'>Cart</h2>
