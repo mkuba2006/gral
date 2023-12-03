@@ -1,6 +1,7 @@
 export const itemy = [
     {
        id:1,
+       type:'Graphics card',
        img: 'https://bizserver.eu/5956-thickbox_default/palit-karta-graficzna-geforce-rtx-3080-gamingpro-10gb-gddr6x-320bit-hdmi3dp.jpg',
        producent: 'NVIDIA',
        model: 'GeForce RTX 3080',
@@ -19,6 +20,7 @@ export const itemy = [
 
     {
        id:2,
+       type:'Graphics card',
        img: 'https://static.gigabyte.com/StaticFile/Image/Global/0a0848c3f652206dc7f2c5c30c6cdf51/Product/28078/Png',
        producent: 'AMD',
        model: 'Radeon RX 6700 XT',
@@ -27,7 +29,7 @@ export const itemy = [
        cena: Number(1899),
        szukaj:'AMD Radeon',
        szczegol: {
-        jeden: '7680x4320',
+        jeden: '7680x4321',
         dwa: '384 GB/s',
         trzy: '2321 MHz',
         cztery: '2581 MHz'
@@ -35,6 +37,7 @@ export const itemy = [
     },
     {
        id:3,
+       type:'Graphics card',
        img: 'https://hanzo.com.pl/userdata/public/gfx/68874/Karta-graficzna-Asus-ROG-Strix-GeForce-RTX-3090-White-OC-Edition-24GB-GDDR6X.jpg',
        producent: 'ASUS',
        model: 'ROG Strix GeForce RTX 3090',
@@ -53,6 +56,7 @@ export const itemy = [
 
     {
        id:4,
+       type:'Graphics card',
        img: 'https://www.pcbuildersclub.com/wp-content/uploads/2019/02/Gigabyte-GeForce-GTX-1660-Ti-Mini-ITX-OC-1.png',
        producent: 'EVGA',
        model: 'GeForce GTX 1660 Ti',
@@ -71,6 +75,7 @@ export const itemy = [
 
     {
        id:5,
+       type:'Graphics card',
        img: 'https://media.cdn.videotesty.pl/media/products/gigabyte-geforce-gtx-1050-ti-windforce-4gb-gddr5-128-bit-3xhdmi-dvi-d-dp-box-gv-n105twf2oc-4gd/7000225f48dc11b9910b9e4daf415460.png',
        producent: 'MSI',
        model: 'GeForce GTX 1050 Ti',
@@ -89,6 +94,7 @@ export const itemy = [
 
     {
        id:6,
+       type:'Graphics card',
        img: 'https://asset.msi.com/resize/image/global/product/product_9_20180411114234_5acd842a97197.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png',
        producent: 'Gigabyte',
        model: 'GeForce RTX 3060',
@@ -107,6 +113,7 @@ export const itemy = [
 
     {
        id:7,
+       type:'Graphics card',
        img: 'https://itreseller.com.pl/wp-content/uploads/2020/11/RX-6800-PULSE-1024x1013.png',
        producent: 'Sapphire',
        model: 'Radeon RX 6800',
@@ -125,6 +132,7 @@ export const itemy = [
 
     {
        id:8,
+       type:'Graphics card',
        img: 'https://www.zotac.com/download/files/page/Choose_VGA/vga_zotacgaming_1660_super.png',
        producent: 'ZOTAC',
        model: 'GeForce GTX 1660',
@@ -143,6 +151,7 @@ export const itemy = [
 
     {
        id:9,
+       type:'Graphics card',
        img: 'https://image.ceneostatic.pl/data/article_picture/d9/66/2557-074d-4502-8947-0fe007ca1bff_large.png',
        producent: 'Palit',
        model: 'GeForce RTX 3070',
@@ -161,6 +170,7 @@ export const itemy = [
 
     {
        id:10,
+       type:'Graphics card',
        img: 'https://asset.msi.com/resize/image/global/product/product_6_20191129112250_5de08f0a68258.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png',
        producent: 'XFX',
        model: 'Radeon RX 5500 XT',
@@ -176,8 +186,18 @@ export const itemy = [
         cztery: '1725 MHz'
        }
     },
+
+
+
+
+
+
+
+
+    
     {
       id:11,
+      type:'Procesor',
       img: 'https://bcavn.com/Image/Picture/Intel/Processor/core-i9-x-series.jpg',
       producent: 'Intel',
       model: 'Core i9-10940X',
@@ -195,6 +215,7 @@ export const itemy = [
    },
    {
       id:12,
+      type:'Procesor',
       img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/2/pr_2023_2_24_14_19_6_20_00.jpg',
       producent: 'AMD',
       model: 'Ryzen 9 7950X3D',
@@ -212,6 +233,7 @@ export const itemy = [
    },
    {
       id: 13,
+      type:'Procesor',
       img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/10/pr_2021_10_26_7_49_18_782_00.jpg',
       producent: 'Intel',
       model: 'Core i9-12900K',
@@ -229,6 +251,7 @@ export const itemy = [
    },
    {
       id: 14,
+      type:'Procesor',
       img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2020/10/pr_2020_10_9_13_47_7_306_00.jpg',
       producent: 'AMD',
       model: 'Ryzen 7 6800X',
@@ -250,6 +273,7 @@ export const itemy = [
 
    {
       id: 15,
+      type:'Procesor',
       img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/12/pr_2021_12_23_9_40_42_356_00.jpg',
       producent: 'Intel',
       model: 'Core i7-12700',
@@ -268,6 +292,7 @@ export const itemy = [
    },
    {
       id: 16,
+      type:'Procesor',
       img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2020/10/pr_2020_10_9_12_59_29_839_00.jpg',
       producent: 'AMD',
       model: 'Ryzen 5 5600X',
@@ -286,6 +311,7 @@ export const itemy = [
    },
    {
       id: 17,
+      type:'Procesor',
       img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/10/pr_2021_10_26_7_31_43_884_00.jpg',
       producent: 'Intel',
       model: 'Core i5-12600K',
@@ -304,6 +330,7 @@ export const itemy = [
    },
    {
       id: 18,
+      type:'Procesor',
       img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/4/pr_2022_4_15_16_29_20_759_00.jpg',
       producent: 'AMD',
       model: 'Ryzen 7 5700X',
@@ -322,6 +349,7 @@ export const itemy = [
    },
    {
       id: 19,
+      type:'Procesor',
       img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/9/pr_2022_9_27_11_59_1_676_00.jpg',
       producent: 'Intel',
       model: 'i7-13700KF',
@@ -341,6 +369,7 @@ export const itemy = [
    ,
    {
       id: 20,
+      type:'RAM',
       img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/4/pr_2021_4_27_12_55_1_344_02.jpg',
       producent: 'GOODRAM ',
       model: 'GOODRAM 3600 MHz (PC4-28800)',
@@ -359,6 +388,7 @@ export const itemy = [
    },
    {
       id: 21,
+      type:'RAM',
       img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/7/pr_2021_7_7_14_16_12_451_02.jpg',
       producent: 'Kingston',
       model: 'Kingston 3200MHz',
@@ -378,6 +408,7 @@ export const itemy = [
    ,
    {
       id: 22,
+      type:'RAM',
       img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/8/pr_2023_8_3_13_7_52_603_00.jpg',
       producent: 'Lexar',
       model: 'Lexar 6400MHz',
@@ -397,6 +428,7 @@ export const itemy = [
    ,
    {
       id: 23,
+      type:'RAM',
       img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/12/pr_2021_12_17_11_51_5_362_00.jpg',
       producent: 'G.SKILL',
       model: 'G.SKILL 6000MHz',
@@ -415,6 +447,7 @@ export const itemy = [
    },
    {
       id: 24,
+      type:'RAM',
       img: 'https://prod-api.mediaexpert.pl/api/images/gallery_500_500/thumbnails/images/28/2830979/Pamiec-RAM-CORSAIR-Vengeance-Pro-RGB-32GB-3600MHz-front.jpg',
       producent: 'Corsair',
       model: 'Corsair 4000MHz',
@@ -434,6 +467,7 @@ export const itemy = [
    ,
    {
       id: 25,
+      type:'RAM',
       img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2020/3/pr_2020_3_10_14_46_46_355_00.jpg',
       producent: 'Crucial',
       model: 'Crucial 5600MHz',
@@ -453,6 +487,7 @@ export const itemy = [
    ,
    {
       id: 26,
+      type:'RAM',
       img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/1/pr_2022_1_12_16_2_16_922_02.jpg',
       producent: 'ADATA',
       model: 'ADATA 3200MHz',
@@ -472,6 +507,7 @@ export const itemy = [
    ,
    {
       id: 27,
+      type:'RAM',
       img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/2/pr_2021_2_11_11_18_32_575_00.jpg',
       producent: 'Team Group',
       model: 'Team Group 7200MHz',
@@ -491,6 +527,7 @@ export const itemy = [
    ,
    {
       id: 28,
+      type:'RAM',
       img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/4/pr_2023_4_17_14_29_17_82_00.jpg',
       producent: 'Patriot',
       model: 'Patriot 5000MHz',

@@ -4,8 +4,10 @@ import './filter.css'
 import OpenContext from "../logic/open_context";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faX} from '@fortawesome/free-solid-svg-icons'
-import { useContext } from "react";
+import { memo, useContext } from "react";
 import ListContext from "../logic/itemy";
+import Checklist from "./checlist";
+
 
 function Filter() {
     const Otx = useContext(OpenContext)
@@ -20,10 +22,11 @@ function Filter() {
             <div id="filters_one">
                 <Sortuj />
                 <Price_range />
+                <Checklist />
             </div>
             <button id="reset_button" onClick={clc}><FontAwesomeIcon icon={faX}/><span>reset filters</span></button>
         </div>)
     );
 }
   
-export default Filter;
+export default memo(Filter);
