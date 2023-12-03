@@ -1,6 +1,6 @@
 // img, amount price
 import { useContext } from 'react';
-import CartContext from '../logic//cart_context';
+import CartContext from '../logic/cart_context';
 import OpenContext from '../logic/open_context';
 import Element from './element';
 
