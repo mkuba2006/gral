@@ -50,8 +50,7 @@ function Checklist() {
                     <label htmlFor="vehicle1"> {filt}</label>
                 </div>
             ))}
-            <input type="checkbox" id="" name="" value="" />
-            <label htmlFor="vehicle1"> x</label>
+            
         </div>
     );
 }
