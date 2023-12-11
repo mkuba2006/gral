@@ -8,8 +8,12 @@ const OpenProvider = (props) => {
   const [isHover, changeH] = useReducer(reducer, false);
   const [isFavhover, changeFavH] = useReducer(reducer, false);
   const [isCart, changeC] = useReducer(reducer, false);
+  const [isELVisible, changeVisible] = useReducer(reducer, false);
+
 
   const toggle = (setter) => () => setter({ type: 'TOGGLE' });
+
+
 
   const OpenCTX = {
     open: isOpen,
@@ -20,6 +24,8 @@ const OpenProvider = (props) => {
     setFavHover: toggle(changeFavH),
     seeCart: isCart,
     setCart: toggle(changeC),
+    ELvisible: isELVisible,
+    setVisible: toggle(changeVisible),
   };
 
   return (

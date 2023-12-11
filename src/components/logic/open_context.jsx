@@ -11,6 +11,10 @@ const OpenContext = React.createContext({
 
   seeCart: false,
   setCart: () => {},
+
+  ELvisible: false,
+  setVisible: () => {},
+
 });
 
 export default OpenContext;

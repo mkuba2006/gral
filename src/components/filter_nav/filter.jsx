@@ -12,20 +12,29 @@ import Checklist from "./checlist";
 function Filter() {
     const Otx = useContext(OpenContext)
     const ltx = useContext(ListContext)
+
+    const changeVisibility = () => {
+        Otx.setVisible();
+        console.log(Otx.ELvisible);
+    }
     const clc= ()=>{
         ltx.getit('');
         ltx.getprice('5000');
     }
     return (
-        (!Otx.seeCart &&
-        <div id="filters">
-            <div id="filters_one">
-                <Sortuj />
-                <Price_range />
-                <Checklist />
-            </div>
-            <button id="reset_button" onClick={clc}><FontAwesomeIcon icon={faX}/><span>reset filters</span></button>
-        </div>)
+        <>
+            {!Otx.seeCart && (
+                <div id="filters">
+                    <div id="filters_one">
+                        <Sortuj />
+                        <Price_range />
+                        <button id="checklist_button" onClick={changeVisibility}>Filters</button>
+                    </div>
+                    <button id="reset_button" onClick={clc}><FontAwesomeIcon icon={faX} /><span>reset filters</span></button>
+                </div>
+            )}
+            {Otx.ELvisible && <Checklist />}
+        </>
     );
 }
   
