@@ -3,11 +3,11 @@ import { useState } from "react";
 
 
 const ListProvider = ({ children }) => {
-  const [name, sName] = useState(''); 
-  const [sorts, ssort] = useState(''); 
-  const [price, sprice] = useState(5000); 
-  const [firmy, gfirmy] = useState([]); 
-
+  let [name, sName] = useState(''); 
+  let [sorts, ssort] = useState(''); 
+  let [price, sprice] = useState(5000); 
+  let [firmy, gfirmy] = useState([]); 
+  let [filtry, gfiltry] = useState([]); 
   const getName = (newName) => {
     sName(newName);
     console.log(newName);
@@ -29,6 +29,18 @@ const ListProvider = ({ children }) => {
       }
     }
   };
+  const getfiltry = (filtr, stan) => {
+    if (stan === "ADD") {
+      filtry.push(filtr);
+    } else if (stan === "REMOVE") {
+      const updatedFiltry = filtry.filter(item => item !== filtr);
+      filtry = updatedFiltry;
+    }
+  
+    console.log(filtry);
+    gfiltry(filtry);
+  };
+  
 
   const values = {
     name: name,
@@ -39,6 +51,8 @@ const ListProvider = ({ children }) => {
     getprice: getprice,
     firmy: [],
     getfirmy : getf,
+    filtry: [],
+    getfiltry : getfiltry,
   }
 
   return (

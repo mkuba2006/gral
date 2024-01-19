@@ -5,35 +5,46 @@ import { itemy } from "../items";
 import './filter.css';
 
 function Checklist() {
-    const Otx = useContext(OpenContext);
+    //const Otx = useContext(OpenContext);
     const ltx = useContext(ListContext);
-
-
+  
     const types = [];
     const producents = [];
     const Cards_F1 = [];
     const Cards_F2 = [];
     const Cards_F3 = [];
     const Cards_F4 = [];
-
+  
     function push(array, value) {
-        if (!array.includes(value)) {
-            array.push(value);
-        }
+      if (!array.includes(value)) {
+        array.push(value);
+      }
     }
-    
-    itemy.forEach(item => {
-        push(types, item.type);
-        push(producents, item.producent);
-    
-        if (item.type === 'Graphics card') {
-            push(Cards_F1, item.szczegol.jeden);
-            push(Cards_F2, item.szczegol.dwa);
-            push(Cards_F3, item.szczegol.trzy);
-            push(Cards_F4, item.szczegol.cztery);
-        }
+  
+    itemy.forEach((item) => {
+      push(types, item.type);
+      push(producents, item.producent);
+  
+      if (item.type === 'Graphics card') {
+        push(Cards_F1, item.szczegol.jeden);
+        push(Cards_F2, item.szczegol.dwa);
+        push(Cards_F3, item.szczegol.trzy);
+        push(Cards_F4, item.szczegol.cztery);
+      }
     });
-    
+  
+    const handleCheckboxClick = (e) => {
+        if (e.target.checked) {
+            if(producents.includes(e.target.value)){
+                ltx.getfiltry(e.target.value,'ADD');
+            }
+        }
+        else{
+            if(producents.includes(e.target.value)){
+                ltx.getfiltry(e.target.value,'REMOVE');
+            }
+        }
+    };
 
 
 
@@ -46,7 +57,7 @@ function Checklist() {
                 <div id="ul">
                     {producents.map((filt) => (
                         <div key={filt}>
-                            <input type="checkbox" id={filt} name={filt} value={filt} />
+                            <input type="checkbox" id={filt} name={filt} value={filt} onChange={handleCheckboxClick}/>
                             <label htmlFor="vehicle1"> {filt}</label>
                         </div>
                     ))}
@@ -59,7 +70,7 @@ function Checklist() {
                 <div id="ul">
                     {Cards_F1.map((filt) => (
                         <div key={filt}>
-                            <input type="checkbox" id={filt} name={filt} value={filt} />
+                            <input type="checkbox" id={filt} name={filt} value={filt} onChange={handleCheckboxClick} />
                             <label htmlFor="vehicle1"> {filt}</label>
                         </div>
                     ))}
@@ -72,7 +83,7 @@ function Checklist() {
                 <div id="ul">
                     {Cards_F2.map((filt) => (
                         <div key={filt}>
-                            <input type="checkbox" id={filt} name={filt} value={filt} />
+                            <input type="checkbox" id={filt} name={filt} value={filt} onChange={handleCheckboxClick} />
                             <label htmlFor="vehicle1"> {filt}</label>
                         </div>
                     ))}
@@ -84,7 +95,7 @@ function Checklist() {
                 <div id="ul">
                     {Cards_F3.map((filt) => (
                         <div key={filt}>
-                            <input type="checkbox" id={filt} name={filt} value={filt} />
+                            <input type="checkbox" id={filt} name={filt} value={filt} onChange={handleCheckboxClick} />
                             <label htmlFor="vehicle1"> {filt}</label>
                         </div>
                     ))}
@@ -97,7 +108,7 @@ function Checklist() {
                 <div id="ul">
                     {Cards_F4.map((filt) => (
                         <div key={filt}>
-                            <input type="checkbox" id={filt} name={filt} value={filt} />
+                            <input type="checkbox" id={filt} name={filt} value={filt} onChange={handleCheckboxClick} />
                             <label htmlFor="vehicle1"> {filt}</label>
                         </div>
                     ))}

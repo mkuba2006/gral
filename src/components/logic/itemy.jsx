@@ -9,6 +9,8 @@ const ListContext = createContext({
   getprice: (s) => {},
   firmy: [],
   getfirmy : (f)=>{},
+  filtry: [],
+  getfiltry : (f,stan)=>{},
 });
 
 export default ListContext;
