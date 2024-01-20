@@ -1,6 +1,5 @@
 import ListContext from "./itemy";
-import { useState } from "react";
-
+import { useState, useEffect } from "react";
 
 const ListProvider = ({ children }) => {
   let [name, sName] = useState(''); 
@@ -8,6 +7,7 @@ const ListProvider = ({ children }) => {
   let [price, sprice] = useState(5000); 
   let [firmy, gfirmy] = useState([]); 
   let [filtry, gfiltry] = useState([]); 
+
   const getName = (newName) => {
     sName(newName);
     console.log(newName);
@@ -20,6 +20,7 @@ const ListProvider = ({ children }) => {
   const getprice = (s) => {
     sprice(s);
   };
+
   const getf = (s) => {
     const arr = [];
     for (let i = 0; i < s.length; i++) {
@@ -29,18 +30,18 @@ const ListProvider = ({ children }) => {
       }
     }
   };
+
   const getfiltry = (filtr, stan) => {
     if (stan === "ADD") {
-      filtry.push(filtr);
+      gfiltry(prevFiltry => [...prevFiltry, filtr]);
     } else if (stan === "REMOVE") {
-      const updatedFiltry = filtry.filter(item => item !== filtr);
-      filtry = updatedFiltry;
+      gfiltry(prevFiltry => prevFiltry.filter(item => item !== filtr));
     }
-  
-    console.log(filtry);
-    gfiltry(filtry);
   };
   
+  useEffect(() => {
+    console.log(filtry);
+  }, [filtry]);
 
   const values = {
     name: name,
@@ -50,9 +51,9 @@ const ListProvider = ({ children }) => {
     price: price,
     getprice: getprice,
     firmy: [],
-    getfirmy : getf,
-    filtry: [],
-    getfiltry : getfiltry,
+    getfirmy: getf,
+    filtry: filtry,
+    getfiltry: getfiltry,
   }
 
   return (
@@ -61,4 +62,5 @@ const ListProvider = ({ children }) => {
     </ListContext.Provider>
   );
 };
+
 export default ListProvider;

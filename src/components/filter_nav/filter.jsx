@@ -33,7 +33,7 @@ function Filter() {
                     <button id="reset_button" onClick={clc}><FontAwesomeIcon icon={faX} /><span>reset filters</span></button>
                 </div>
             )}
-            {Otx.ELvisible && <Checklist />}
+            {Otx.ELvisible ? <div style={{ display: 'block' }}> <Checklist  /></div> : <div style={{ display: 'none' }}> <Checklist  /></div> }
         </>
     );
 }

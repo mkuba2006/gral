@@ -15,7 +15,14 @@ function App() {
     name: '', 
   };
 
-  console.log(filteredElements);
+  
+
+
+
+
+
+  
+
   return (
     <Provider>
       <OpenProvider>

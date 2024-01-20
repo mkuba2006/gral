@@ -1,5 +1,5 @@
 import OpenContext from "../logic/open_context";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import ListContext from "../logic/itemy";
 import { itemy } from "../items";
 import './filter.css';
@@ -7,7 +7,6 @@ import './filter.css';
 function Checklist() {
     //const Otx = useContext(OpenContext);
     const ltx = useContext(ListContext);
-  
     const types = [];
     const producents = [];
     const Cards_F1 = [];
@@ -34,20 +33,12 @@ function Checklist() {
     });
   
     const handleCheckboxClick = (e) => {
-        if (e.target.checked) {
-            if(producents.includes(e.target.value)){
-                ltx.getfiltry(e.target.value,'ADD');
-            }
-        }
-        else{
-            if(producents.includes(e.target.value)){
-                ltx.getfiltry(e.target.value,'REMOVE');
-            }
+        const { value, checked } = e.target;
+    
+        if (producents.includes(value)) {
+            ltx.getfiltry(value, checked ? 'ADD' : 'REMOVE');
         }
     };
-
-
-
 
     return (
         <div id="checklist_elements">
