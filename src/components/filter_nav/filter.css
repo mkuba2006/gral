@@ -10,6 +10,11 @@
     margin: 0 auto;
     margin-left: 93px;
 }
+@media screen and (min-width: 880px) {
+    #filters{
+        padding-top: 20vh;
+    }
+}
 
 #filters_one{
     display: flex;

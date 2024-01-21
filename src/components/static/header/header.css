@@ -5,6 +5,8 @@
     align-items: center;
     justify-content: space-around;
     font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    background-color: white;
     padding: 15px 0;
     margin-bottom: 100px;
     max-height: 62px;
