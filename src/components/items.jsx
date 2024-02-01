@@ -38,7 +38,7 @@ export const itemy = [
     {
        id:3,
        type:'Graphics card',
-       img: 'https://hanzo.com.pl/userdata/public/gfx/68874/Karta-graficzna-Asus-ROG-Strix-GeForce-RTX-3090-White-OC-Edition-24GB-GDDR6X.jpg',
+       img: 'https://images.smicro.cz/obr/attachments/asus-rog-strix-rtx3090-o24g-gaming-90yv0f93-m0nm00-3.jpeg',
        producent: 'ASUS',
        model: 'ROG Strix GeForce RTX 3090',
        info1: '24 GB GDDR6X',

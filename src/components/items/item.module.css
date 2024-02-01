@@ -236,6 +236,9 @@ form button:hover {
         margin: 0;
         width: 150px;
     }
+    .sinfo .heart{
+        padding-top: 0px;
+    }
 }
 
 
