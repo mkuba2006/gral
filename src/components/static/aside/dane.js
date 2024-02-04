@@ -2,12 +2,12 @@ import { faMemory, faMicrochip, faHardDrive, faTachographDigital, faChalkboard} 
 
 const NavItems = [
     {
-      name: "Kart graficzne",
+      name: "Graphics cards",
       img: faTachographDigital,
       options: ["AMD Radeon", "NVIDIA GeForce"]
     },
     {
-      name: "Procesory",
+      name: "Procesors",
       img: faMicrochip,
       options: [
         "Socket AM1 / FM1 / FM2",
@@ -20,12 +20,12 @@ const NavItems = [
       ]
     },
     {
-      name: "Pamięci RAM",
+      name: "RAM",
       img: faMemory,
       options: ["DDR 3", "DDR 4", "DDR 5"]
     },
     {
-      name: "Płyty główne",
+      name: "Motherboards",
       img: faChalkboard,
       options: [
         "Socket AM3 / AM3+",
@@ -39,7 +39,7 @@ const NavItems = [
       ]
     },
     {
-      name: "Dyski Twarde",
+      name: "Hard drivers",
       img: faHardDrive,
       options: [
         "SSD PCI-Express",

@@ -1,7 +1,7 @@
 export const itemy = [
     {
        id:1,
-       type:'Graphics card',
+       type:'Graphics cards',
        img: 'https://bizserver.eu/5956-thickbox_default/palit-karta-graficzna-geforce-rtx-3080-gamingpro-10gb-gddr6x-320bit-hdmi3dp.jpg',
        producent: 'NVIDIA',
        model: 'GeForce RTX 3080',
@@ -20,7 +20,7 @@ export const itemy = [
 
     {
        id:2,
-       type:'Graphics card',
+       type:'Graphics cards',
        img: 'https://static.gigabyte.com/StaticFile/Image/Global/0a0848c3f652206dc7f2c5c30c6cdf51/Product/28078/Png',
        producent: 'AMD',
        model: 'Radeon RX 6700 XT',
@@ -37,7 +37,7 @@ export const itemy = [
     },
     {
        id:3,
-       type:'Graphics card',
+       type:'Graphics cards',
        img: 'https://images.smicro.cz/obr/attachments/asus-rog-strix-rtx3090-o24g-gaming-90yv0f93-m0nm00-3.jpeg',
        producent: 'ASUS',
        model: 'ROG Strix GeForce RTX 3090',
@@ -56,7 +56,7 @@ export const itemy = [
 
     {
        id:4,
-       type:'Graphics card',
+       type:'Graphics cards',
        img: 'https://www.pcbuildersclub.com/wp-content/uploads/2019/02/Gigabyte-GeForce-GTX-1660-Ti-Mini-ITX-OC-1.png',
        producent: 'EVGA',
        model: 'GeForce GTX 1660 Ti',
@@ -75,7 +75,7 @@ export const itemy = [
 
     {
        id:5,
-       type:'Graphics card',
+       type:'Graphics cards',
        img: 'https://media.cdn.videotesty.pl/media/products/gigabyte-geforce-gtx-1050-ti-windforce-4gb-gddr5-128-bit-3xhdmi-dvi-d-dp-box-gv-n105twf2oc-4gd/7000225f48dc11b9910b9e4daf415460.png',
        producent: 'MSI',
        model: 'GeForce GTX 1050 Ti',
@@ -94,7 +94,7 @@ export const itemy = [
 
     {
        id:6,
-       type:'Graphics card',
+       type:'Graphics cardss',
        img: 'https://asset.msi.com/resize/image/global/product/product_9_20180411114234_5acd842a97197.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png',
        producent: 'Gigabyte',
        model: 'GeForce RTX 3060',
@@ -113,7 +113,7 @@ export const itemy = [
 
     {
        id:7,
-       type:'Graphics card',
+       type:'Graphics cards',
        img: 'https://itreseller.com.pl/wp-content/uploads/2020/11/RX-6800-PULSE-1024x1013.png',
        producent: 'Sapphire',
        model: 'Radeon RX 6800',
@@ -132,7 +132,7 @@ export const itemy = [
 
     {
        id:8,
-       type:'Graphics card',
+       type:'Graphics cards',
        img: 'https://www.zotac.com/download/files/page/Choose_VGA/vga_zotacgaming_1660_super.png',
        producent: 'ZOTAC',
        model: 'GeForce GTX 1660',
@@ -151,7 +151,7 @@ export const itemy = [
 
     {
        id:9,
-       type:'Graphics card',
+       type:'Graphics cards',
        img: 'https://image.ceneostatic.pl/data/article_picture/d9/66/2557-074d-4502-8947-0fe007ca1bff_large.png',
        producent: 'Palit',
        model: 'GeForce RTX 3070',
@@ -170,7 +170,7 @@ export const itemy = [
 
     {
        id:10,
-       type:'Graphics card',
+       type:'Graphics cards',
        img: 'https://asset.msi.com/resize/image/global/product/product_6_20191129112250_5de08f0a68258.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png',
        producent: 'XFX',
        model: 'Radeon RX 5500 XT',
@@ -197,7 +197,7 @@ export const itemy = [
     
     {
       id:11,
-      type:'Procesor',
+      type:'Procesors',
       img: 'https://bcavn.com/Image/Picture/Intel/Processor/core-i9-x-series.jpg',
       producent: 'Intel',
       model: 'Core i9-10940X',
@@ -208,14 +208,14 @@ export const itemy = [
 
       szczegol: {
        jeden: '3.3 GHz (4.6 GHz w trybie turbo)',
-       dwa: '14 rdzeni',
-       trzy: 'Socket 2066',
-       cztery: 'DDR 4-2933 (PC4-23466)'
+       dwa: '14 cores',
+       trzy: '10nm',
+       cztery: '32 threads'
       }
    },
    {
       id:12,
-      type:'Procesor',
+      type:'Procesors',
       img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/2/pr_2023_2_24_14_19_6_20_00.jpg',
       producent: 'AMD',
       model: 'Ryzen 9 7950X3D',
@@ -226,14 +226,14 @@ export const itemy = [
 
       szczegol: {
        jeden: '4.2 GHz (5.7 GHz w trybie turbo)',
-       dwa: '16 rdzeni',
-       trzy: 'Socket AM5',
-       cztery: '32 wątki'
+       dwa: '16 cores',
+       trzy: '12nm',
+       cztery: '32 threads'
       }
    },
    {
       id: 13,
-      type:'Procesor',
+      type:'Procesors',
       img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/10/pr_2021_10_26_7_49_18_782_00.jpg',
       producent: 'Intel',
       model: 'Core i9-12900K',
@@ -244,14 +244,14 @@ export const itemy = [
    
       szczegol: {
          jeden: '3.2 GHz (5.2 GHz w trybie turbo)',
-         dwa: '16 rdzeni',
+         dwa: '16 cores',
          trzy: '10nm',
-         cztery: '24 wątki',
+         cztery: '24 threads',
       }
    },
    {
       id: 14,
-      type:'Procesor',
+      type:'Procesors',
       img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2020/10/pr_2020_10_9_13_47_7_306_00.jpg',
       producent: 'AMD',
       model: 'Ryzen 7 6800X',
@@ -262,9 +262,9 @@ export const itemy = [
    
       szczegol: {
          jeden: '3.6 GHz (4.9 GHz w trybie turbo)',
-         dwa: '12 rdzeni',
-         trzy: 'Socket AM4',
-         cztery: '24 wątki',
+         dwa: '12 cores',
+         trzy: '10nm',
+         cztery: '24 threads',
       }
    },
 
@@ -273,7 +273,7 @@ export const itemy = [
 
    {
       id: 15,
-      type:'Procesor',
+      type:'Procesors',
       img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/12/pr_2021_12_23_9_40_42_356_00.jpg',
       producent: 'Intel',
       model: 'Core i7-12700',
@@ -284,15 +284,15 @@ export const itemy = [
    
       szczegol: {
          jeden: '2.9 GHz (4.7 GHz w trybie turbo)',
-         dwa: '12 rdzeni',
+         dwa: '12 cores',
          trzy: '10nm',
-         cztery: '20 wątki',
+         cztery: '20 threads',
          piec: '20MB',
       }
    },
    {
       id: 16,
-      type:'Procesor',
+      type:'Procesors',
       img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2020/10/pr_2020_10_9_12_59_29_839_00.jpg',
       producent: 'AMD',
       model: 'Ryzen 5 5600X',
@@ -303,15 +303,15 @@ export const itemy = [
    
       szczegol: {
          jeden: '3.7 GHz (4.6 GHz w trybie turbo)',
-         dwa: '6 rdzeni',
+         dwa: '6 cores',
          trzy: '7nm',
-         cztery: '12 wątki',
+         cztery: '12 threads',
          piec: '32MB',
       }
    },
    {
       id: 17,
-      type:'Procesor',
+      type:'Procesors',
       img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/10/pr_2021_10_26_7_31_43_884_00.jpg',
       producent: 'Intel',
       model: 'Core i5-12600K',
@@ -322,15 +322,15 @@ export const itemy = [
    
       szczegol: {
          jeden: '3.7 GHz (4.9 GHz w trybie turbo)',
-         dwa: '10 rdzeni',
+         dwa: '10 cores',
          trzy: '10nm',
-         cztery: '16 wątki',
+         cztery: '16 threads',
          piec: '20MB',
       }
    },
    {
       id: 18,
-      type:'Procesor',
+      type:'Procesors',
       img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/4/pr_2022_4_15_16_29_20_759_00.jpg',
       producent: 'AMD',
       model: 'Ryzen 7 5700X',
@@ -341,15 +341,15 @@ export const itemy = [
    
       szczegol: {
          jeden: '3.4 GHz (4.6 GHz w trybie turbo)',
-         dwa: '8 rdzeni',
-         trzy: '7 nm',
+         dwa: '8 cores',
+         trzy: '7nm',
          cztery: '16 wątków',
          piec: '36 MB',
       }
    },
    {
       id: 19,
-      type:'Procesor',
+      type:'Procesors',
       img: 'https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/9/pr_2022_9_27_11_59_1_676_00.jpg',
       producent: 'Intel',
       model: 'i7-13700KF',
@@ -360,8 +360,8 @@ export const itemy = [
    
       szczegol: {
          jeden: '3.4 GHz (5.4 GHz w trybie turbo)',
-         dwa: '16 rdzeni',
-         trzy: '10 nm',
+         dwa: '16 cores',
+         trzy: '10nm',
          cztery: '24 wątków',
          piec: '30 MB',
       }
@@ -380,10 +380,7 @@ export const itemy = [
    
       szczegol: {
          jeden: 'CL 18',
-         dwa: '2 moduły',
-         trzy: '',
-         cztery: '',
-         piec: '',
+         dwa: '2 modules',
       }
    },
    {
@@ -399,10 +396,7 @@ export const itemy = [
    
       szczegol: {
          jeden: 'CL 16',
-         dwa: '2 moduły',
-         trzy: '',
-         cztery: '',
-         piec: '',
+         dwa: '2 modules',
       }
    }
    ,
@@ -419,10 +413,7 @@ export const itemy = [
    
       szczegol: {
          jeden: 'CL32',
-         dwa: '2 moduły',
-         trzy: '',
-         cztery: '',
-         piec: '',
+         dwa: '2 modules',
       }
    }
    ,
@@ -439,10 +430,7 @@ export const itemy = [
    
       szczegol: {
          jeden: 'CL40',
-         dwa: '2 moduły',
-         trzy: '',
-         cztery: '',
-         piec: '',
+         dwa: '2 modules',
       }
    },
    {
@@ -458,10 +446,7 @@ export const itemy = [
    
       szczegol: {
          jeden: 'CL18',
-         dwa: '2 moduły',
-         trzy: 'RGB',
-         cztery: '',
-         piec: '',
+         dwa: '2 modules',
       }
    }
    ,
@@ -478,10 +463,7 @@ export const itemy = [
    
       szczegol: {
          jeden: 'CL22',
-         dwa: '2 moduły',
-         trzy: '',
-         cztery: '',
-         piec: '',
+         dwa: '2 modules',
       }
    }
    ,
@@ -498,10 +480,7 @@ export const itemy = [
    
       szczegol: {
          jeden: 'CL16',
-         dwa: '2 moduły',
-         trzy: 'XPG',
-         cztery: '',
-         piec: '',
+         dwa: '2 modules',
       }
    }
    ,
@@ -518,10 +497,7 @@ export const itemy = [
    
       szczegol: {
          jeden: 'CL36',
-         dwa: '2 moduły',
-         trzy: '',
-         cztery: '',
-         piec: '',
+         dwa: '2 modules',
       }
    }
    ,
@@ -538,10 +514,7 @@ export const itemy = [
    
       szczegol: {
          jeden: 'CL20',
-         dwa: '2 moduły',
-         trzy: '',
-         cztery: '',
-         piec: '',
+         dwa: '2 modules',
       }
    }
    

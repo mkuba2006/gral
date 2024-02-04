@@ -7,19 +7,18 @@ import {faX} from '@fortawesome/free-solid-svg-icons'
 import { memo, useContext } from "react";
 import ListContext from "../logic/itemy";
 import Checklist from "./checlist";
-
+import { itemy } from "../items";
 
 function Filter() {
     const Otx = useContext(OpenContext)
     const ltx = useContext(ListContext)
-
+    const bef = itemy
     const changeVisibility = () => {
         Otx.setVisible();
         console.log(Otx.ELvisible);
     }
     const clc= ()=>{
-        ltx.getit('');
-        ltx.getprice('5000');
+        window.location.href = window.location.href;
     }
     return (
         <>
@@ -28,12 +27,25 @@ function Filter() {
                     <div id="filters_one">
                         <Sortuj />
                         <Price_range />
-                        <button id="checklist_button" onClick={changeVisibility}>Filters</button>
+                        {ltx.group.trim() !== "" &&
+                            <button id="checklist_button" onClick={changeVisibility}>Filters</button>
+                        }
+                        <p>Before changge search, unselect all filters</p>
                     </div>
                     <button id="reset_button" onClick={clc}><FontAwesomeIcon icon={faX} /><span>reset filters</span></button>
                 </div>
             )}
-            {Otx.ELvisible ? <div style={{ display: 'block' }}> <Checklist  /></div> : <div style={{ display: 'none' }}> <Checklist  /></div> }
+            
+            
+            
+            {(Otx.ELvisible && ltx.group.trim() !== "") ? <div style={{ display: 'block' }}> <Checklist  /></div> : <div style={{ display: 'none' }}> <Checklist  /></div> }
+
+
+
+
+
+
+
         </>
     );
 }

@@ -14,18 +14,26 @@ const Aside = () => {
   const [expandedGroup, setExpandedGroup] = useState(null);
   const Otx = useContext(OpenContext);
 
-  const change = () =>{Otx.setOpen();}
   const setIt = (i) => {
     change();
     setIsOpen(!isOpen);
   };
-  const lst = (i) => {ltx.getit(i);};
 
   const toggleGroup = (index) => {
     if (isOpen) {
       setExpandedGroup((prevGroup) => (prevGroup === index ? null : index));
     }
   };
+  const change = () =>{Otx.setOpen()};
+  const lst = (i) => {ltx.getit(i)};
+  const group = (e) => ltx.getgroup(e);
+
+  const rnd = (a,b,c,d) =>{
+    setIsOpen(a); 
+    setIt(b); 
+    lst(c); 
+    group(d);
+  }
 
   return (
     <div>
@@ -34,14 +42,14 @@ const Aside = () => {
           <Head onClick={() => {setIsOpen(!isOpen); change();}} />
           <nav className={classes.sidebar_menu}>
           {NavItems.map((item, index) => (
-            <div key={index} className={classes.sidebar_button}>
+            <div key={index} className={classes.sidebar_button} >
                 <ul>
-                    <button onClick={() => toggleGroup(index)}>
+                    <button onClick={() => {toggleGroup(index)}}>
                       <span className={classes.title}><FontAwesomeIcon icon={item.img} className={classes.icon} />{item.name}</span>
                       <p>
                       {expandedGroup === index &&
                           item.options.map((option, optionIndex) => (
-                          <li key={option} onClick={() => {setIsOpen(!isOpen); setIt(option); lst(option)}} className={classes.sidebar_li}>{option}</li>
+                            <li key={option} onClick={() => { rnd(!isOpen, option, option, item.name)}} className={classes.sidebar_li}>{option}</li>
                       ))}
                       </p>
                     </button>
@@ -56,3 +64,46 @@ const Aside = () => {
 };
 
 export default Aside;
+
+
+// const rnd = (a,b,c,d) =>{
+//   ltx.getit('');
+//   ltx.getgroup('');
+//   ltx.getprice('5000');
+//   ltx.jed =[];
+//   ltx.dwa =[];
+//   ltx.trzy =[];
+//   ltx.cztery =[];
+//   ltx.filtry =[];
+//   setIsOpen(a); 
+//   setIt(b); 
+//   lst(c); 
+//   group(d);
+// }
+// <li key={option} onClick={() => { rnd(!isOpen, option, option, item.name)}} className={classes.sidebar_li}>{option}</li>
+
+
+
+
+// group: '',
+// getgroup: (newName) => {},
+// name: '',
+// getit: (newName) => {},
+// sort: '',
+// getsort: (s) => {},
+// price: '5000',
+// getprice: (s) => {},
+// firmy: [],
+// getfirmy : (f)=>{},
+
+// filtry: [],
+// getfiltry : (f,stan)=>{},
+
+// jed: [],
+// getjed : (f,stan)=>{},
+// dwa: [],
+// getdwa : (f,stan)=>{},
+// trzy: [],
+// gettrzy : (f,stan)=>{},
+// cztery: [],
+// getcztery : (f,stan)=>{},

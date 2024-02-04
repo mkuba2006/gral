@@ -14,12 +14,19 @@ function Items() {
 
    useEffect(() => {
       const updatedItems = itemy
-         .filter((item) => ltx.name.toLowerCase() === '' ? item : ltx.name.toLowerCase() === item.szukaj.toLowerCase())
-         .filter((item) => price === '' ? item : item.cena < price)
-         .filter((item) => ltx.filtry.length === 0 || ltx.filtry.includes(item.producent));
+        .filter((item) => ltx.name.toLowerCase() === '' ? item : ltx.name.toLowerCase() === item.szukaj.toLowerCase())
+        .filter((item) => price === '' ? item : item.cena < price)
+        .filter((item) => ltx.filtry.length === 0 || ltx.filtry.includes(item.producent))
+        .filter((item) => ltx.name.toLowerCase() === '' ? item : ltx.jed.length === 0 || ltx.jed.some((val) => item.szczegol.jeden.includes(val)))
+        .filter((item) => ltx.name.toLowerCase() === '' ? item : ltx.dwa.length === 0 || ltx.dwa.some((val) => item.szczegol.dwa.includes(val)))
+        .filter((item) => ltx.name.toLowerCase() === '' ? item : ltx.trzy.length === 0 || ltx.trzy.some((val) => item.szczegol.trzy.includes(val)))
+        .filter((item) => ltx.name.toLowerCase() === '' ? item : ltx.cztery.length === 0 || ltx.cztery.some((val) => item.szczegol.cztery.includes(val)))
+
 
       setfiltItemy(updatedItems);
-   }, [ltx.name, ltx.sort, ltx.price, ltx.filtry]);
+      console.log(ltx.dwa);
+    }, [ltx.name, ltx.sort, ltx.price, ltx.filtry, ltx.jed, ltx.dwa, ltx.trzy, ltx.cztery]);
+
 
    if (val === "cena-malejaco") filtItemy.sort((a, b) => b.cena - a.cena);
    else if (val === "cena-rosnaco") filtItemy.sort((a, b) => a.cena - b.cena);
@@ -57,3 +64,28 @@ function Items() {
 }
 
 export default Items;
+
+
+
+// useEffect(() => {
+//    const updatedItems = itemy.filter(item => {
+//       const lowerCaseName = ltx.name.toLowerCase();
+//       const lowerCaseSearch = item.szukaj.toLowerCase();
+//       const lowerCaseJeden = item.szczegol.jeden.toLowerCase();
+//       const lowerCaseDwa = item.szczegol.dwa.toLowerCase();
+//       const lowerCaseTrzy = item.szczegol.trzy.toLowerCase();
+//       const lowerCaseCztery = item.szczegol.cztery.toLowerCase();
+
+//       return (
+//          (lowerCaseName === '' || lowerCaseSearch.includes(lowerCaseName) ||
+//           lowerCaseJeden.includes(lowerCaseName) || 
+//           lowerCaseDwa.includes(lowerCaseName) || 
+//           lowerCaseTrzy.includes(lowerCaseName) || 
+//           lowerCaseCztery.includes(lowerCaseName)) &&
+//          (price === '' || item.cena < price) &&
+//          (ltx.filtry.length === 0 || ltx.filtry.includes(item.producent))
+//       );
+//    });
+
+//    setfiltItemy(updatedItems);
+// }, [ltx.name, ltx.sort, ltx.price, ltx.filtry]);
