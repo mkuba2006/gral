@@ -39,7 +39,7 @@ const Aside = () => {
     <div>
       <aside  className={`${classes.sidebar} ${isOpen ? classes.open : ""}`}>
         <div className={classes.sidebar_inner}>
-          <Head onClick={() => {setIsOpen(!isOpen); change();}} />
+          <Head onClick={() => {setIsOpen(!isOpen); change(); }} />
           <nav className={classes.sidebar_menu}>
           {NavItems.map((item, index) => (
             <div key={index} className={classes.sidebar_button} >

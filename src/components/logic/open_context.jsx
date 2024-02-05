@@ -8,6 +8,9 @@ const OpenContext = React.createContext({
 
   Favhover: false,
   setFavHover: () => {},
+  closeFavHover: () => {},
+  openFavHover: () => {},
+
 
   seeCart: false,
   setCart: () => {},

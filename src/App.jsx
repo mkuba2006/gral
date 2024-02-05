@@ -7,12 +7,13 @@ import OpenProvider from "./components/logic/open_provider";
 import Cart_main from "./components/cart/cart";
 import ListProvider from "./components/logic/itemy_provider";
 import Filter from "./components/filter_nav/filter";
-import { itemy } from "./components/items";
 import { useContext } from "react";
 import ListContext from "./components/logic/itemy";
-// import Fav from "./components/fav/cart";
+import Fav from "./components/fav/cart";
+import OpenContext from "./components/logic/open_context";
 
 function App() {
+  const Otx= useContext(OpenContext)
   const Listvalue = {
     name: '', 
   };
@@ -28,9 +29,10 @@ function App() {
   return (
     <Provider>
       <OpenProvider>
-        <Fog />
+      {Otx.Favhover && <Fav/>}
         <ListProvider value={Listvalue}>
           <Header/>
+          <Fog />
           <Aside/>
           <Cart_main />
           <Filter/>

@@ -14,13 +14,12 @@ function Fav() {
     // ))
     
     const setopen = () =>{
-        Otx.setOpen();
         Otx.setFavHover();
         console.log('sope');
     }
 
     return (
-        <>
+        <div id='bg'>
             <dialog id="favourites">
             <h2>Favourite</h2>
             <div id='elements'>
@@ -36,7 +35,7 @@ function Fav() {
                     <button onClick={setopen}>Close</button>
                 </div>
             </dialog>
-        </>
+        </div>
     );
   }
   

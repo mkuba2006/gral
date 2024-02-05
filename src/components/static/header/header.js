@@ -14,7 +14,9 @@ function Header() {
 
   const changeH = () =>{Otx.setHover(); console.log(Otx.hover);};
   const changeC = () =>{Otx.setCart(); console.log('cart: ',Otx.seeCart);};
-  const changeFavH = () =>{Otx.setFavHover();Otx.setOpen();};
+  const changeFavH = () =>{
+    Otx.setFavHover();
+  };
 
   const ctx = useContext(CartContext);
   const {items} = ctx; 
@@ -37,7 +39,7 @@ function Header() {
             Cart
           </button>
         </div>
-        {Otx.Favhover && <Fav/>}
+         {Otx.Favhover && <Fav/>} 
         {Otx.hover &&
           <div id="mainl" onMouseLeave={changeH} onClick={Otx.setHover(true)}>
           <h2 id='Cart_title'>Cart</h2>

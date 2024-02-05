@@ -48,7 +48,16 @@
 }
 
 
-
+#bg{
+    z-index: 0;
+    top: -10vh;
+    position: fixed;
+    width: 100vw;
+    height: 110vh;
+    background-color: #000000b9;
+    transition: all 0.2s ease;
+    transform: translateX(-70vw);
+}
 
 #favourites {
     position: absolute;
@@ -60,8 +69,8 @@
     height: auto;
     background-color: white;
     border-radius: 10px;
-    top: 20%;
-    z-index: 400;
+    top: 20vh;
+    z-index: 1000;
     border: none;
 }
 #favourites h2{
