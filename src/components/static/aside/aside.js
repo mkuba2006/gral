@@ -1,10 +1,9 @@
 import { useContext, useState } from "react";
-import classes from "./aside.module.css";
+import cl from "./aside.module.css";
 import Head from "./sidebar-header";
 import NavItems from "./dane";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import OpenContext from "../../logic/open_context";
-
 import ListContext from "../../logic/itemy";
 
 
@@ -37,19 +36,19 @@ const Aside = () => {
 
   return (
     <div>
-      <aside  className={`${classes.sidebar} ${isOpen ? classes.open : ""}`}>
-        <div className={classes.sidebar_inner}>
+      <aside  className={`${cl.sidebar} ${isOpen ? cl.open : ""}`}>
+        <div className={cl.sidebar_inner}>
           <Head onClick={() => {setIsOpen(!isOpen); change(); }} />
-          <nav className={classes.sidebar_menu}>
+          <nav className={cl.sidebar_menu}>
           {NavItems.map((item, index) => (
-            <div key={index} className={classes.sidebar_button} >
+            <div key={index} className={cl.sidebar_button} >
                 <ul>
                     <button onClick={() => {toggleGroup(index)}}>
-                      <span className={classes.title}><FontAwesomeIcon icon={item.img} className={classes.icon} />{item.name}</span>
+                      <span className={cl.title}><FontAwesomeIcon icon={item.img} className={cl.icon} />{item.name}</span>
                       <p>
                       {expandedGroup === index &&
                           item.options.map((option, optionIndex) => (
-                            <li key={option} onClick={() => { rnd(!isOpen, option, option, item.name)}} className={classes.sidebar_li}>{option}</li>
+                            <li key={option} onClick={() => { rnd(!isOpen, option, option, item.name)}} className={cl.sidebar_li}>{option}</li>
                       ))}
                       </p>
                     </button>
@@ -80,7 +79,7 @@ export default Aside;
 //   lst(c); 
 //   group(d);
 // }
-// <li key={option} onClick={() => { rnd(!isOpen, option, option, item.name)}} className={classes.sidebar_li}>{option}</li>
+// <li key={option} onClick={() => { rnd(!isOpen, option, option, item.name)}} className={cl.sidebar_li}>{option}</li>
 
 
 

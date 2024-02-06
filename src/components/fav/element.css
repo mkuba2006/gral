@@ -53,7 +53,7 @@
     top: -10vh;
     position: fixed;
     width: 100vw;
-    height: 110vh;
+    height: 120vh;
     background-color: #000000b9;
     transition: all 0.2s ease;
     transform: translateX(-70vw);
@@ -75,6 +75,7 @@
 }
 #favourites h2{
     font-size: 20px;
+    margin-bottom: 20px;
 }
 #elements{
     height: 75%;
@@ -113,6 +114,6 @@
     }
     #favourites {
         width: 60vw;
-        top: 120%;
+        top: 20%;
     }
 }

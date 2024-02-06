@@ -207,7 +207,7 @@ export const itemy = [
       szukaj: 'Socket 2066',
 
       szczegol: {
-       jeden: '3.3 GHz (4.6 GHz w trybie turbo)',
+       jeden: '3.3 GHz (4.6 GHz turbo)',
        dwa: '14 cores',
        trzy: '10nm',
        cztery: '32 threads'
@@ -225,7 +225,7 @@ export const itemy = [
       szukaj: 'Socket AM5',
 
       szczegol: {
-       jeden: '4.2 GHz (5.7 GHz w trybie turbo)',
+       jeden: '4.2 GHz (5.7 GHz turbo)',
        dwa: '16 cores',
        trzy: '12nm',
        cztery: '32 threads'
@@ -243,7 +243,7 @@ export const itemy = [
       szukaj: 'Socket LGA 1700',
    
       szczegol: {
-         jeden: '3.2 GHz (5.2 GHz w trybie turbo)',
+         jeden: '3.2 GHz (5.2 GHz turbo)',
          dwa: '16 cores',
          trzy: '10nm',
          cztery: '24 threads',
@@ -261,7 +261,7 @@ export const itemy = [
       szukaj: 'Socket AM4',
    
       szczegol: {
-         jeden: '3.6 GHz (4.9 GHz w trybie turbo)',
+         jeden: '3.6 GHz (4.9 GHz turbo)',
          dwa: '12 cores',
          trzy: '10nm',
          cztery: '24 threads',
@@ -283,7 +283,7 @@ export const itemy = [
       szukaj: 'Socket 1700',
    
       szczegol: {
-         jeden: '2.9 GHz (4.7 GHz w trybie turbo)',
+         jeden: '2.9 GHz (4.7 GHz turbo)',
          dwa: '12 cores',
          trzy: '10nm',
          cztery: '20 threads',
@@ -302,7 +302,7 @@ export const itemy = [
       szukaj: 'Socket AM4',
    
       szczegol: {
-         jeden: '3.7 GHz (4.6 GHz w trybie turbo)',
+         jeden: '3.7 GHz (4.6 GHz turbo)',
          dwa: '6 cores',
          trzy: '7nm',
          cztery: '12 threads',
@@ -321,7 +321,7 @@ export const itemy = [
       szukaj: 'Socket 1700',
    
       szczegol: {
-         jeden: '3.7 GHz (4.9 GHz w trybie turbo)',
+         jeden: '3.7 GHz (4.9 GHz turbo)',
          dwa: '10 cores',
          trzy: '10nm',
          cztery: '16 threads',
@@ -340,7 +340,7 @@ export const itemy = [
       szukaj: 'Socket AM4',
    
       szczegol: {
-         jeden: '3.4 GHz (4.6 GHz w trybie turbo)',
+         jeden: '3.4 GHz (4.6 GHz turbo)',
          dwa: '8 cores',
          trzy: '7nm',
          cztery: '16 wątków',
@@ -359,7 +359,7 @@ export const itemy = [
       szukaj: 'Socket 1700',
    
       szczegol: {
-         jeden: '3.4 GHz (5.4 GHz w trybie turbo)',
+         jeden: '3.4 GHz (5.4 GHz turbo)',
          dwa: '16 cores',
          trzy: '10nm',
          cztery: '24 wątków',

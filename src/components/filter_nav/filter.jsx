@@ -30,7 +30,7 @@ function Filter() {
                         {ltx.group.trim() !== "" &&
                             <button id="checklist_button" onClick={changeVisibility}>Filters</button>
                         }
-                        <p>Before changge search, unselect all filters</p>
+                        <p>Before any change search, unselect all filters</p>
                     </div>
                     <button id="reset_button" onClick={clc}><FontAwesomeIcon icon={faX} /><span>reset filters</span></button>
                 </div>
