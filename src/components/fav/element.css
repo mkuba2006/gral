@@ -52,11 +52,11 @@
     z-index: 0;
     top: -10vh;
     position: fixed;
-    width: 100vw;
+    width: 110vw;
     height: 120vh;
     background-color: #000000b9;
     transition: all 0.2s ease;
-    transform: translateX(-63vw);
+    transform: translateX(-66vw);
 }
 
 #favourites {
