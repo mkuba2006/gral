@@ -1,5 +1,5 @@
 .before{
-    z-index: 0;
+    z-index: 1;
     top: -10vh;
     position: fixed;
     width: 100vw;

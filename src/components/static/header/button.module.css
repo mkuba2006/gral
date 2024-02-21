@@ -9,7 +9,7 @@
     font-family: 'Montserrat', sans-serif;
     flex-direction: column;
     color: black;
-    z-index: 101;
+    /* z-index: 101; */
     min-width: 88px;
     
 }
