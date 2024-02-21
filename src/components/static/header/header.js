@@ -5,7 +5,6 @@ import CartContext from '../../logic/cart_context'
 import OpenContext from '../../logic/open_context';
 import Element from './element';
 import FavList from './favlist';
-import Test from '../../fav/test';
 import classes from './button.module.css'
 import Fav from '../../fav/cart';
 

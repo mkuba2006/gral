@@ -8,7 +8,6 @@ import Cart_main from "./components/cart/cart";
 import ListProvider from "./components/logic/itemy_provider";
 import Filter from "./components/filter_nav/filter";
 import { useContext } from "react";
-import ListContext from "./components/logic/itemy";
 import Fav from "./components/fav/cart";
 import OpenContext from "./components/logic/open_context";
 
@@ -17,15 +16,7 @@ function App() {
   const Listvalue = {
     name: '', 
   };
-  const ltx = useContext(ListContext)
   
-
-
-
-
-
-  
-
   return (
     <Provider>
       <OpenProvider>

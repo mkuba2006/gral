@@ -146,3 +146,20 @@
         color: white;
     }
 }
+
+
+@media screen and (max-width: 450px){
+    .header{
+        flex-wrap: wrap;
+        left: 50px;
+    }
+    #mainl{
+        transform: translate(-60px,-2px);
+        border-radius: 12px;
+    }
+    #Cart_title {
+        padding: 20px;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+}
