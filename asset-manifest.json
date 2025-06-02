@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/gralhost/static/css/main.ae2d8e66.css",
+    "main.js": "/gralhost/static/js/main.b2dddf7f.js",
+    "index.html": "/gralhost/index.html",
+    "main.ae2d8e66.css.map": "/gralhost/static/css/main.ae2d8e66.css.map",
+    "main.b2dddf7f.js.map": "/gralhost/static/js/main.b2dddf7f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae2d8e66.css",
+    "static/js/main.b2dddf7f.js"
+  ]
+}
