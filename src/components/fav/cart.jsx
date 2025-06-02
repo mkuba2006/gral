@@ -9,9 +9,6 @@ function Fav() {
 
     const Otx = useContext(OpenContext);
     const ctx = useContext(CartContext);
-    // ctx.favourites.map((item)=>(
-    //     console.log(ctx.favourites)
-    // ))
     
     const setopen = () =>{
         Otx.setFavHover();

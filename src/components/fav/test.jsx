@@ -14,7 +14,9 @@ function Test(props) {
 
 
     return (
-        <div id="element" onClick={setopen}>
+        <div id="element" 
+            // onClick={setopen}
+        >
             <div id="img_container">
                 <img src={props.img}/>
             </div>
