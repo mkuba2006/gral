@@ -1,10 +1,10 @@
 import { useReducer } from "react";
 import CartContext from "./cart_context";
-import { faV } from "@fortawesome/free-solid-svg-icons";
+// import { faV } from "@fortawesome/free-solid-svg-icons";
 
 const basic = { items: [], totalAmount: 0 };
 const zero = { items: [], totalAmount: 0};
-const arr =[];
+// const arr =[];
 
 
 const reducer = (stan, obecny) =>{

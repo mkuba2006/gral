@@ -1,12 +1,12 @@
 import React, { useState, useContext } from 'react';
 import classes from './item.module.css';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart as solidHeart } from '@fortawesome/free-solid-svg-icons';
-import { faHeart as regularHeart } from '@fortawesome/free-regular-svg-icons';
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faHeart as solidHeart } from '@fortawesome/free-solid-svg-icons';
+// import { faHeart as regularHeart } from '@fortawesome/free-regular-svg-icons';
 import CartContext from "../logic/cart_context";
 
 function Form(props) {
-  const ctx = useContext(CartContext);
+  // const ctx = useContext(CartContext);
 
 
   const [isClicked, setIsClicked] = useState(false);
